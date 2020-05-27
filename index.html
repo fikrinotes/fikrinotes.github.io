@@ -5,66 +5,33 @@
 <meta charset="utf-8">
 <title>website fikri mulyana setiawan</title>
 <script>
- .InjectBuiltins();eval($bltns);
+Brython 3.8.9 on Netscape 5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+>>> enkripsi={'a':1,'b':2,'c':3,'d':4,'e':5,'f':6,'g':7,'h':8,'i':9,'j':10,'k':11,'l':12,'m':13,'n':14,'o':15,'p':16,'q':17,'r':18,'s':19,'t':20,'u':21,'v':22,'w':23,'x':24,'y':25,'z':26,' ':' ',',':','}
 
-var $locals = $locals___main__;
-$locals___main__.__package__ = ""
-$locals.__annotations__ = _b_.dict.$factory()
-var $top_frame = ["__main__", $locals___main__, "__main__", $locals___main__]
-$locals.$f_trace = $B.enter_frame($top_frame)
-var $stack_length = $B.frames_stack.length;
-try{
-    ;$locals.$line_info = "1,__main__";if($locals.$f_trace !== _b_.None){$B.trace_line()};_b_.None;
-    $locals___main__["enkripsi"] = _b_.dict.$factory([['a',1],['b',2],['c',3],['d',4],['e',5],['f',6],['g',7],['h',8],['i',9],['j',10],['k',11],['l',12],['m',13],['n',14],['o',15],['p',16],['q',17],['r',18],['s',19],['t',20],['u',21],['v',22],['w',23],['x',24],['y',25],['z',26],[' ',' '],[',',',']]);
-    ;$locals.$line_info = "3,__main__";if($locals.$f_trace !== _b_.None){$B.trace_line()};_b_.None;
-    $locals___main__["hasil"] = _b_.dict.$factory([[1,'a'],[2,'b'],[3,'c'],[4,'d'],[5,'e'],[6,'f'],[7,'g'],[8,'h'],[9,'i'],[10,'j'],[11,'k'],[12,'l'],[13,'m'],[14,'n'],[15,'o'],[16,'p'],[17,'q'],[18,'r'],[19,'s'],[20,'t'],[21,'u'],[22,'v'],[23,'w'],[24,'x'],[25,'y'],[26,'z']]);
-    ;$locals.$line_info = "5,__main__";if($locals.$f_trace !== _b_.None){$B.trace_line()};_b_.None;
-    $locals___main__["pembuka"] = 'SELAMAT DATANG';
-    ;$locals.$line_info = "6,__main__";if($locals.$f_trace !== _b_.None){$B.trace_line()};_b_.None;
-    $B.$call($B.builtins.print)($B.$call($B.$getattr($locals___main__["pembuka"],"center"))(60, '~'));
-    ;$locals.$line_info = "7,__main__";if($locals.$f_trace !== _b_.None){$B.trace_line()};_b_.None;
-    $B.$call($B.builtins.print)('masukkan kata untuk dienkripsi:');
-    ;$locals.$line_info = "8,__main__";if($locals.$f_trace !== _b_.None){$B.trace_line()};_b_.None;
-    $B.$call($B.builtins.print)('#catatan:gunakan tanda_sebagai pengganti spasi');
-    ;$locals.$line_info = "9,__main__";if($locals.$f_trace !== _b_.None){$B.trace_line()};_b_.None;
-    $locals___main__["kata"] = $B.$call($B.builtins.input)();
-    ;$locals.$line_info = "10,__main__";if($locals.$f_trace !== _b_.None){$B.trace_line()};_b_.None;
-    $B.$call($B.builtins.print)('jumlah pergeseran:');
-    ;$locals.$line_info = "11,__main__";if($locals.$f_trace !== _b_.None){$B.trace_line()};_b_.None;
-    $locals___main__["x"] = $B.$call($B.builtins.int)($B.$call($B.builtins.input)());
-    ;$locals.$line_info = "12,__main__";if($locals.$f_trace !== _b_.None){$B.trace_line()};_b_.None;
-    $locals___main__["n"] = $B.$call($B.builtins.len)($locals___main__["kata"]);
-    ;$locals.$line_info = "13,__main__";if($locals.$f_trace !== _b_.None){$B.trace_line()};_b_.None;
-    $B.$call($B.builtins.print)('HASIL ENKRIPSI:');
-    $locals["$no_break360"] = true
-    ;$locals.$line_info = "14,__main__";if($locals.$f_trace !== _b_.None){$B.trace_line()};_b_.None;
-    while($B.$bool($locals["$no_break360"] && (typeof $locals___main__["n"] == "number" ? $locals___main__["n"]>0 : $B.rich_comp("__gt__",$locals___main__["n"],0)))){
-        ;$locals.$line_info = "15,__main__";if($locals.$f_trace !== _b_.None){$B.trace_line()};_b_.None;
-        if($B.$bool($B.$is_member($B.$getitem($locals___main__["kata"],$B.$getattr($locals___main__["n"],"__neg__")()),$locals___main__["enkripsi"]))){
-            ;$locals.$line_info = "16,__main__";if($locals.$f_trace !== _b_.None){$B.trace_line()};_b_.None;
-            $locals___main__["akhir"] = $B.add($B.$getitem($locals___main__["enkripsi"],$B.$getitem($locals___main__["kata"],$B.$getattr($locals___main__["n"],"__neg__")())), $locals___main__["x"]);
-            ;$locals.$line_info = "17,__main__";if($locals.$f_trace !== _b_.None){$B.trace_line()};_b_.None;
-            if($B.$bool((typeof $locals___main__["akhir"] == "number" ? $locals___main__["akhir"]>26 : $B.rich_comp("__gt__",$locals___main__["akhir"],26)))){
-                ;$locals.$line_info = "18,__main__";if($locals.$f_trace !== _b_.None){$B.trace_line()};_b_.None;
-                $locals___main__["akhir"] = $B.add($B.$getitem($locals___main__["enkripsi"],$B.$getitem($locals___main__["kata"],$B.$getattr($locals___main__["n"],"__neg__")())), (typeof $locals___main__["x"].valueOf() == "number" ? (typeof $locals___main__["x"] == "number" ? $B.sub($locals___main__["x"],26) : new Number($B.sub($locals___main__["x"],26))): $B.rich_op("sub",$locals___main__["x"],26)));
-            }y
-            ;$locals.$line_info = "19,__main__";if($locals.$f_trace !== _b_.None){$B.trace_line()};_b_.None;
-            $B.$call($B.builtins.print)($B.$getitem($locals___main__["hasil"],$locals___main__["akhir"]),{$nat:"kw",kw:{end:''}});
-        }
-        else{
-            ;$locals.$line_info = "21,__main__";if($locals.$f_trace !== _b_.None){$B.trace_line()};_b_.None;
-            $B.$call($B.builtins.print)($B.$getitem($locals___main__["kata"],$B.$getattr($locals___main__["n"],"__neg__")()),{$nat:"kw",kw:{end:''}});
-        }
-        ;$locals.$line_info = "23,__main__";if($locals.$f_trace !== _b_.None){$B.trace_line()};_b_.None;
-        $locals___main__["n"] = (typeof $locals___main__["n"].valueOf() == "number" ? (typeof $locals___main__["n"] == "number" ? $B.sub($locals___main__["n"],1) : new Number($B.sub($locals___main__["n"],1))): $B.rich_op("sub",$locals___main__["n"],1));
-        $locals.$line_info = "14,__main__";if($locals.$f_trace !== _b_.None){$B.trace_line()};None;
-    }
-    $B.leave_frame({value: _b_.None})
-}
-catch(err){
-    $B.leave_frame({value: _b_.None})
-    throw err
-}
+hasil={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h',9:'i',10:'j',11:'k',12:'l',13:'m',14:'n',15:'o',16:'p',17:'q',18:'r',19:'s',20:'t',21:'u',22:'v',23:'w',
+24:'x',25:'y',26:'z'}
+pembuka='SELAMAT DATANG'
+print(pembuka.center(60,'~'))
+print('masukkan kata untuk dienkripsi:')
+print('#catatan:gunakan tanda_sebagai pengganti spasi')
+kata=input()
+print('jumlah pergeseran:')
+x=int(input())
+n=len(kata)
+print('HASIL ENKRIPSI:')
+while n>0 :
+	if kata[-n] in enkripsi:
+		akhir=enkripsi[kata[-n]]+x
+		if akhir>26:
+			akhir=enkripsi[kata[-n]]+x-26
+		print(hasil[akhir],end='')
+	else:
+		print(kata[-n],end='')
+	
+	n=n-1
+
+	<iframe src="http://brython.info/console.html" width="800" height="400"></iframe>
+              
  
 </script>
 </head>
