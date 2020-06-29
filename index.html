@@ -5,34 +5,7 @@
 <meta charset="utf-8">
 <title>website fikri mulyana setiawan</title>
 <script>
-Brython 3.8.9 on Netscape 5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
->>> enkripsi={'a':1,'b':2,'c':3,'d':4,'e':5,'f':6,'g':7,'h':8,'i':9,'j':10,'k':11,'l':12,'m':13,'n':14,'o':15,'p':16,'q':17,'r':18,'s':19,'t':20,'u':21,'v':22,'w':23,'x':24,'y':25,'z':26,' ':' ',',':','}
-
-hasil={1:'a',2:'b',3:'c',4:'d',5:'e',6:'f',7:'g',8:'h',9:'i',10:'j',11:'k',12:'l',13:'m',14:'n',15:'o',16:'p',17:'q',18:'r',19:'s',20:'t',21:'u',22:'v',23:'w',
-24:'x',25:'y',26:'z'}
-pembuka='SELAMAT DATANG'
-print(pembuka.center(60,'~'))
-print('masukkan kata untuk dienkripsi:')
-print('#catatan:gunakan tanda_sebagai pengganti spasi')
-kata=input()
-print('jumlah pergeseran:')
-x=int(input())
-n=len(kata)
-print('HASIL ENKRIPSI:')
-while n>0 :
-	if kata[-n] in enkripsi:
-		akhir=enkripsi[kata[-n]]+x
-		if akhir>26:
-			akhir=enkripsi[kata[-n]]+x-26
-		print(hasil[akhir],end='')
-	else:
-		print(kata[-n],end='')
-	
-	n=n-1
-
-	<iframe src="http://brython.info/console.html" width="800" height="400"></iframe>
-              
- 
+document.getElemenById("contoh").innerHTML="fikrifikrifikrifikri";
 </script>
 </head>
 <style>
@@ -47,9 +20,6 @@ table{font-size:20px;}
 
 </style>
 <body>
-<script type="text/python">
-alert(program.py)
-</script>
 <header>
 <h1 align="center">fikri notes</h1>
 </header>
@@ -82,6 +52,7 @@ alert(program.py)
 </tr>
 </table>
 </nav>
+
 <h2 align="left"><em><strong>tentang developer:</strong></em></h2>
 <img src="IMG_20200204_192726.JPG" border="5" height="400"/>
 <br>
@@ -89,7 +60,7 @@ alert(program.py)
 <br>sekolah:SMAN NEGERI 4 PADANG
 <br>hobi:coding,belajar fisika
 <br><strong>contact:</strong>
-
+<p id="contoh"></p>
 <br><a href="https://www.instagram.com/fikrimulyana_s/"><img src="images.jpeg" height="80"></a>
 <a href="mailto:fikrimulyanasetiawan@gmail.com"><img src="images (1).jpeg" height="80"></a>
 </p1>
