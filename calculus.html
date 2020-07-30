@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="shortcut icon" type="jpg" href="/fotoprofil.jpg"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kalkulus</title>
+    <style type="text/css" media="all">
+      h1{font-family:cursive;}
+      body{background-image:url("Kalkulus.JPG");}
+      header{background-color:#3399FF;}
+      p{font-style:italic;}
+      .paragraf1{text-indent: 40px;}
+      .paragraf2{text-indent: 28px;}
+      article{background-color:#F0F0FF;}
+    </style>
+</head>
+
+<body>
+  <header>
+    <h1>Kenapa turunan dari $e^x$ adalah $e^x$ ?</h1>
+  </header>
+  
+  <article>
+    <h4><b>subjek:matematika</b> <br />
+    <b>materi:kalkulus</b></h4>
+    <p>hallo semuanya!!</p>
+    <p align="" class="paragraf1">
+      Sebagian dari kalian mungkin sudah tau bahwa turunan(diferensial) dari persamaan $y=e^x$ akan menghasilkan $e^x$ juga,tapi kenapa begitu? nah,disini kita akan membahasnya bersama-sama
+    </p>
+    
+    <p>
+      sebelum mencoba untuk menurunkan persamaan tadi,terlebih dahulu kita harus mengetahui definisi dari turunan.secara sederhana,turunan menunjukkan seberapa cepat suatu hal berubah.dalam konteks matematika,"hal" yang dimaksud itu berupa persamaan.
+    </p>
+    
+    <p>
+      secara matematis,definisi turunan dari fungsi $f(x)$ adalah:<br>
+      $\lim \limits_{∆x->0} \frac{f(x+∆x)-f(x)}{∆x}$ 
+    </p>
+    
+    <p>
+      jika $f(x)=e^x$ ,maka turunan dari $f(x)$ adalah:<br />
+      $\frac{dy}{dx} = \lim \limits_{∆x->0} \frac{e^{x+∆x} +e^x}{∆x}$
+    </p>
+    
+    <p class="paragraf2">
+      $=\lim \limits_{∆x->0}\frac{e^xe^{∆x}-e^x}{∆x}$</p>
+    <p class="paragraf2">
+      $=\lim \limits_{∆x->0}\frac{e^x(e^{∆x}-1)}{∆x}$ <br /></p>
+    <p class="paragraf2">$=e^x\lim \limits_{∆x->0}\frac{(e^{∆x}-1)}{∆x}$
+    </p>
+    <p>
+      karena $\lim \limits_{∆x->}\frac{(e^{∆x}-1)}{∆x}=0$,maka:<br />
+      $\frac{dy}{dx}=e^x.1$ <br />
+      karena $y=e^x$,maka persamaan di atas menjadi:<br />
+      $\frac{d}{dx}(e^x)=e^x$
+    </p>
+    <p>
+      serangkaian langkah-langkah di atas menunjukkan bahwa turunan dari $e^x$ tetap akan menghasilkan $e^x$,berapa kalipun kita menurunkan nya.
+    </p>
+    
+    
+  </article>
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+</body>
+
+</html>
