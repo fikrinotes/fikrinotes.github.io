@@ -1,0 +1,16 @@
+.kartu{
+  background:#FFFFFF;
+  border-radius: 8px;
+  width: 329px;
+  height:467px;
+  text-align: center;
+  margin: 6rem auto 8.1rem auto;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+}
+body{
+  background: -webkit-linear-gradient(bottom, #2dbd6e, #a6f77b);
+  background-repeat: no-repeat;
+}
+.tombol{
+  font-family: Arial, Helvetica, sans-serif
+}
