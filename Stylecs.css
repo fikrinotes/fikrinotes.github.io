@@ -1,0 +1,22 @@
+.judul{
+  background:-webkit-linear-gradient(bottom,#FAA503,#FBD48B);
+  font-family: cursive;
+  border-radius:8px;
+  padding:10px;
+}
+.pembukaan{
+  font-family: serif;
+  font-style: italic;
+}
+.materi{
+  font-family: serif;
+}
+a{ 
+  text-decoration:none;
+}
+.paragraf{
+  text-indent: 40px;
+}
+.rumus{
+  text-indent: 33px
+}
