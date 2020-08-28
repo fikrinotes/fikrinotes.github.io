@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>fikri</title>
+    <script type="text/javascript" charset="utf-8" src="CaesarCipher.js">
+    </script>
+    
+    <link rel="stylesheet" href="Stylecaesar.css" type="text/css" />
+</head>
+
+<body>
+  <p> </p><br /><h1 align="center"><b>Caesar Cipher</b></h1>
+<div class="kartu">
+  <label><div class="teks"><b>Input Kata:</b></div>
+  <input placeholder="masukkan kata/kalimat..." type="text"  id="masukan" /></label><br /><div class="note">(Catatan:gunakan tanda <b>_</b> atau <b>-</b> sebagai pengganti spasi)</div><br />
+  
+  <label class="teks"><b>Pergeseran:</b><br />
+  <textarea placeholder="isi menggunakan angka..." height="128" type="text"  id="pergeseran"  ></textarea></label><br /> <br />
+   <button  class="tombol"  onclick="encryption()" >Enkripsi</button>
+  <p class="teks">Hasil:</p>
+  <textarea readonly rows="10" cols="30" width="240" placeholder="bagian ini tidak diisi..." id="out"></textarea> 
+</div>
+  <hr color="black"/>
+  <p align="center">copyright &copy;fikri mulyana setiawan</p>
+</body>
+
+</html>
