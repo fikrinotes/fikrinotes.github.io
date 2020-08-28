@@ -1,0 +1,48 @@
+.kartu {
+  background: #FFFFFF;
+  border-radius: 8px;
+  width: 315px;
+  height: 490px;
+  padding: 10px;
+  text-align: center;
+  margin: 4px auto 8.1rem auto;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+}
+
+body {
+  background: -webkit-linear-gradient(bottom,#0B9AD4,#A9D6F6);
+  background-repeat: no-repeat;
+}
+
+.tombol {
+  font-family: Arial, Helvetica, sans-serif
+}
+
+h1 {
+  font-family: cursive;
+  font-size: 45px;
+}
+
+.tombol {
+  font-family: cursive;
+  border-radius: 5%;
+  width: 100px;
+  height: 30px;
+}
+
+.teks {
+  font-family: cursive;
+  font-size: 20px;
+}
+
+input {
+  border-radius: 8%;
+}
+
+textarea {
+  border-radius: 5%;
+}
+
+.note {
+  font-family: sans-serif;
+  font-size: 10px;} 
