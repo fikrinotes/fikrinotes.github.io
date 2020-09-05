@@ -1,0 +1,20 @@
+#judul {
+  font-family: 'Audiowide', cursive;
+  font-size: 25px;
+  background:-webkit-linear-gradient(bottom,#C4E5DD,#15E4B1);
+  border-radius:8px;
+  padding:13px;
+}
+p{
+  text-indent:20px;
+  text-align: justify;
+  font-family: 'Share', cursive;
+}
+footer{
+  font-family: 'Share', cursive;
+  font-size:14px;
+  text-align: center;
+}
+a{
+  text-decoration:none;
+}
