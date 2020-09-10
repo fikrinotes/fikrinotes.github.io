@@ -1,6 +1,5 @@
 @media (max-width:600px){
-  a{text-decoration:none;
-    font-size:25px;}
+a{text-decoration:none;}
   #fotoprofil{
     height:250px;
   }
@@ -322,6 +321,8 @@
 }
 
 @media(min-width:601px){
+a{text-decoration:none;
+    font-size:25px;}
   #fotoprofil{
     height:400px;}
   .container {
