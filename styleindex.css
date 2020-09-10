@@ -1,4 +1,7 @@
 @media (max-width:600px){
+  #fotoprofil{
+    height:250px;
+  }
 .container {
   position: relative;
   overflow: hidden;
@@ -317,6 +320,8 @@
 }
 
 @media(min-width:601px){
+  #fotoprofil{
+    height:400px;}
   .container {
     border: 10px solid #efefef;
     position: relative;
