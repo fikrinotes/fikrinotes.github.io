@@ -1,4 +1,6 @@
 @media (max-width:600px){
+  a{text-decoration:none;
+    font-size:25px;}
   #fotoprofil{
     height:250px;
   }
