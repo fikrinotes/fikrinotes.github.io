@@ -319,14 +319,15 @@
 }
 }
 
-@media (min-width:601px){
-#menu{font-size:45px;}
+@media (min-width:605px){
+a{font-size:45px;}
   #fotoprofil{
     height:400px;}
   .container {
     position: relative;
     overflow: hidden;
     background: #efefef;
+    padding:0px;
   }
   
   .container {
