@@ -20,6 +20,25 @@ a{text-decoration:none;}
 p1{font-family:fantasy;}
 .hakcipta {font-size:12px;}
 #keterangan{font-family: 'Gruppo', cursive;} 
+
+#loading {
+    width:100px;
+    height:100px;
+    border:solid 5px #ccc;
+    border-radius:100%;
+    border-top-color:red;
+    animation:putar 1s linear infinite;
+    position:fixed;
+    right:0;
+    left:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+  }
+  @keyframes putar{
+    from{transform:rotate(0deg)}
+    to{transform:rotate(360deg)}
+  }
 </style>
 <body>
 <header>
@@ -52,6 +71,10 @@ p1{font-family:fantasy;}
 <p class="hakcipta" align="center">copyright &copy;fikri mulyana setiawan</p>
 </script>
 
+<script type="text/javascript" charset="utf-8">
+    var loading=document.getElementById('loading');
+    window.addEventListener('load',function(){loading.style.display="none"});
+</script>    
 </body>
 
 </html>
