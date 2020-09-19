@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Turunan Fungsi y=ln|x|</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style-turunan-ln-x.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div id="judul">Turunan fungsi $y=ln|x|$</div>
+<br />
+<div id="keterangan">
+  Subyek: Matematika <br />
+  Materi: Kalkulus <br />
+  Oleh: Fikri Mulyana Setiawan
+</div>
+<hr />
+
+<p>$y=ln x$ adalah sebuah fungsi logaritma dengan basis bilangan berupa bilangan euler($e$). ln x merupakan bentuk lain dari $log_e x$. Dengan kata lain, $log_e x = ln$ $x$. <p>
+<p>Sebelumnya, telah diketahui bahwa turunan dari $e^x$ adalah $e^x$. Karena $ln$ $x$ merupakan invers dari $e^x$. Hal ini berdampak pada turunan $ln$ $x$. Berikut penjabarannya.</p>
+<p>Misalkan $y=e^x$. Maka, $x=ln|y|$. Sebagaimana aturan pada pecahan, $\frac{dx}{dy} = \frac{1}{dy/dx}$. Dari sini, kita dapat menentukan turunan dari $ln|x|$.</p>
+<div>$\frac{dx}{dy} = \frac{1}{dy/dx}$</div>
+<div class="rumus1"> $=\frac{1}{(\frac{d(e^x)}{dx})}$ <div>
+<div class="rumus">$=\frac{1}{e^x}$</div>
+<p>lalu,substitusikan $x=ln|y|$ dan $e^x=y$: </p>
+$\frac{d}{dy}[ln|y|]=\frac{1}{y}$ <br />
+<p>dapat kita lihat bahwa hasil turunannya adalah 1/y. karena turunan dari $ln |y| = \frac{1}{y}$, maka turunan dari $ln |x|=\frac{1}{x}$</p>
+<div class="rumus-akhir">
+  $\frac{d}{dx}[ln|x|]=\frac{1}{x}$
+</div>
+<br />
+<hr />
+<div class="copyright">copyright &copy; fikri mulyana setiawan </div>
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</body>
+
+</html>
