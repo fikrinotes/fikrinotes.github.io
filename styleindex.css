@@ -1,3 +1,6 @@
+a{
+ font-family: 'Oxanium', cursive;  
+}
 @media (max-width:600px){
   #fotoprofil{
     height:250px;
