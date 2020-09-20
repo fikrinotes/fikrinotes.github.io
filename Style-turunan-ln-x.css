@@ -25,6 +25,12 @@
     padding-left: 7px;
     padding-right: 7px;
   }
+    .rumus2{
+    text-align:center;
+    background: #C4151526;
+    border-radius:8px;
+    padding:7px;
+  }  
   .copyright{
     text-align:center;
     font-family: 'Coda', cursive;
