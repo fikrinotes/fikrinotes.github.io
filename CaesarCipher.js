@@ -57,7 +57,7 @@ var hasil = {
   25: 'y',
   26: 'z'
 };
-
+alert("untuk pengalaman yang lebih baik,buka laman ini pada perangkat mobile")
 function encryption() {
   var kat=document.getElementById('masukan').value;
   var kata=kat.toLowerCase();
