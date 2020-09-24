@@ -1,6 +1,33 @@
 a{
  font-family: 'Oxanium', cursive;  
+ color:#D49513;
+ padding:5px; 
 }
+#navbar{
+  padding:10px;
+}
+
+body {
+  margin:0px;
+  background-image:url('background_main_menu.JPG');
+}
+
+#header{
+  background:#178BFD;
+  padding:10px;
+}
+
+#copyright{
+  background:-webkit-linear-gradient(bottom,#080809,#4E5054);
+  padding:10px;
+  color:#D49513;
+  font-family: 'Oxanium', cursive;
+}
+
+#menu{
+  background:-webkit-linear-gradient(bottom,#080809,#4E5054);
+}
+  
 @media (max-width:600px){
   #fotoprofil{
     height:250px;
