@@ -38,6 +38,10 @@ function b9() {
   document.getElementById("layar").innerHTML += '9';
   result+='9'
 }
+function bnol() {
+  document.getElementById("layar").innerHTML += '0';
+  result+='0'
+}
 
 function bkali() {
   document.getElementById("layar").innerHTML += '×';
