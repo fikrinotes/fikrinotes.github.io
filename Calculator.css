@@ -1,0 +1,29 @@
+#container{
+  background:-webkit-linear-gradient(bottom,#080809,#4E5054);
+  padding:15px;
+  border-radius:25px;
+  border: #E2B134 5px solid;
+  margin-top: 20px;
+}
+#display{
+  text-align:center;
+}
+h4{
+  font-family: 'Cinzel Decorative', cursive;
+  color:#C6D0E7
+}
+h5{
+  font-family: 'Courgette', cursive;
+  color:#F3CB14;
+}
+#copyright{
+  font-family: 'Iceland', cursive;
+  color: #EEEFEF;
+  text-align: center;
+}
+@media(max-width:599px){
+  #layar{
+    resize: none;
+    width: 310px;
+  }
+}
