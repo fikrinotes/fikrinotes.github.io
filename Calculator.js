@@ -1,5 +1,5 @@
 alert('untuk mendapatkan pengalaman yang lebih baik,buka website ini pada perangkat mobile');
-var result=0;
+var result;
 document.getElementById('layar').innerHTML=0
 function b1(){
   document.getElementById("layar").innerHTML+='1';
@@ -64,5 +64,5 @@ function bhasil() {
 }
 function bAC() {
   document.getElementById("layar").innerHTML = 0;
-  result='0';
+  result='';
 }
