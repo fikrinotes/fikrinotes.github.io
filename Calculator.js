@@ -2,7 +2,7 @@ alert('untuk mendapatkan pengalaman yang lebih baik,buka website ini pada perang
 var result=0;
 document.getElementById('layar').innerHTML=0
 function b1(){
-  document.getElementById("layar").innerHTML='1';
+  document.getElementById("layar").innerHTML+='1';
   result+='1';
 }
 
