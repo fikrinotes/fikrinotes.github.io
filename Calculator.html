@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Javascript project: Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Iceland&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="Calculator.css" />
+    <script type="text/javascript" src="Calculator.js" charset="utf-8">
+      
+    </script>
+</head>
+
+<body>
+  <div id="container">
+    <h4 align="left">Fikri Instrument</h4>
+    <h5 align="right">fn-001Js Plus</h5>
+    <div id="display">
+      <textarea readonly id="layar"></textarea>
+    </div>
+      <div id="button">
+        <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group mr-2 btn-block" role="group" aria-label="First group">
+            <button onclick="b1()" id="b1" type="button" class="btn btn-primary ">1</button>
+            <button onclick="b2()" id="b2" type="button" class="btn btn-primary ">2</button>
+            <button onclick="b3()" id="b3" type="button" class="btn btn-primary ">3</button>
+            <button onclick="bkali()" id="b*" type="button" class="btn btn-primary">×</button>
+          </div>
+          
+          <div  class="btn-group mr-2 btn-block" role="group" aria-label="Second group">
+            <button onclick="b4()" id="b4" type="button" class="btn btn-primary">4</button>
+            <button onclick="b5()" id="b5" type="button" class="btn btn-primary">5</button>
+            <button onclick="b6()" id="b6" type="button" class="btn btn-primary">6</button>
+            <button onclick="bbagi()" id="b/" type="button" class="btn btn-primary">÷</button>
+          </div>
+          
+          <div class="btn-group mr-2 btn-block" role="group" aria-label="Third group">
+            <button onclick="b7()" id="b7" type="button" class="btn btn-primary">7</button>
+            <button onclick="b8()" id="b8" type="button" class="btn btn-primary">8</button>
+            <button onclick="b9()" id="b9" type="button" class="btn btn-primary">9</button>
+            <button onclick="bmod()" id="bmod" type="button" class="btn btn-primary">mod</button>
+          </div>
+          
+          <div class="btn-group mr-2 btn-block" role="group" aria-label="Fourth group">
+            <button onclick="btambah()" id="b+" type="button" class="btn btn-primary">+</button>
+            <button onclick="bkurang()" id="b-," type="button" class="btn btn-primary">-</button>
+            <button onclick="bhasil()" id="b=" type="button" class="btn btn-primary">=</button>
+            <button onclick="bAC()" id="bAC" type="button" class="btn btn-primary">AC</button>
+          </div>
+          
+        </div>
+      </div>
+      <div id="copyright">copyright &copy; fikri mulyana setiawan</div>
+  </div>
+  </script>
+</body>
+
+</html>
