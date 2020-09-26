@@ -64,4 +64,5 @@ function bhasil() {
 }
 function bAC() {
   document.getElementById("layar").innerHTML = 0;
+  result='0';
 }
