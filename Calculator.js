@@ -1,3 +1,4 @@
+alert('sebelum menggunakan kalkulator ini, tekan tombol AC terlebih dahulu');
 alert('untuk mendapatkan pengalaman yang lebih baik,buka website ini pada perangkat mobile');
 var result;
 document.getElementById('layar').innerHTML=0
