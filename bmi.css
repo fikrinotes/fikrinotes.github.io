@@ -23,3 +23,6 @@ body{
   padding-right: 10px;
   text-indent: 12px;
 }
+a{
+  text-decoration:none;
+}
