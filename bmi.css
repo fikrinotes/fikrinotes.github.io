@@ -1,0 +1,25 @@
+body{
+  margin:0;
+}
+.judul{
+  text-align: center;
+  font-family: 'Nova Slim', cursive;
+  font-size: 2em;
+}
+.mini-title{
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+}
+.container{
+  background: #8C58E8;
+  padding: 15px;
+}
+.formulir{
+  padding:10px;
+}
+.caption{
+  padding-top:20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-indent: 12px;
+}
