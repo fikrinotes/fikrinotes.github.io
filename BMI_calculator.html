@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BMI Calculator | Fikri Notes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="bmi.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nova+Slim&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+  <div class="judul">
+    BMI Calculator
+  </div>
+  <div class="mini-title">
+    Fikri Notes
+  </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Keterangan</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <b>Perhatian!!!</b> <br /> pastikan agar massa tubuh yang anda masukkan berada dalam satuan kilogram dan tinggi badan dalam satuan meter. anda cukup menulis angka nya tanpa menulis satuan nya. dan tulis tanda koma sebagai titik.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="caption">
+  <p>BMI (Body Mass Index) adalah index yang mengukur massa tubuh (atau "berat") dan juga tinggi badan. kedua parameter ini nantinya dapat menentukan apakah berat badan atau tinggi seseorang ideal. Massa tubuh yang akan diukur harus dalam satuan kilogram (kg) dan tinggi badan dalam satuan meter (m). sekarang, coba ukur BMI anda sendiri dengan program di bawah ini.</p>
+</div>
+<div class="formulir">
+  <form>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Massa tubuh Anda:</label>
+      <input type="email" class="form-control" id="bb" placeholder=" Massa tubuh dalam satuan kilogram (kg) ">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Tinggi badan Anda:</label>
+      <input type="email" class="form-control" id="tb" placeholder=" Tinggi badan dalam satuan meter (m)">
+    </div>
+  </form>
+  <button type="button" class="btn btn-primary"onclick="hitung()">Hitung</button> <br />
+ 
+  Hasil:
+  <textarea readonly class="form-control" id="hasil" rows="3"></textarea>
+</div>
+<script type="text/javascript" charset="utf-8">
+  function hitung(){
+    var bb=Number(document.getElementById('bb').value);
+    var tb=Number(document.getElementById('tb').value);
+    var num=tb*tb;
+    var bmi=bb/num;
+    var print=document.getElementById('hasil');
+    if(bmi<18.5){
+      print.innerHTML=" dengan tinggi badan "+tb+"meter , anda tergolong kurus";
+    }
+    if(bmi>=18.5 && bmi<25){
+      print.innerHTML="tinggi dan berat badan anda ideal";
+    }
+    if(bmi>=25 && bmi<30){
+      print.innerHTML="dengan tinggi"+tb+" meter, anda mulai kelebihan berat badan";
+    }
+    if(bmi>=30 && bmi<35){
+      print.innerHTML="anda termasuk ke golongan obesitas tahap 1";
+    }
+    if(bmi>=35 && bmi<40){
+      print.innerHTML="anda termasuk ke golongan obesitas tahap 2, berhati-hatilah";
+    }
+    if(bmi>40){
+      print.innerHTML="anda termasuk ke golongan obesitas tahap 3";
+    }
+   
+  }
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script type="text/javascript" charset="utf-8">
+  $('#myModal').modal('show');
+</script>
+</body>
+
+</html>
