@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  background: #14141312;
+}
+
+#heading {
+  background: -webkit-linear-gradient(bottom, #0BC1E5,#1B65E8);
+  padding: 18px;
+}
+
+#content {
+  font-family: 'Audiowide';
+  font-size: 45px;
+  text-align: center;
+}
+
+#mainwebpage {
+  font-family: 'Bebas Neue';
+  font-size: 20px;
+  text-align: center;
+}
+
+.kartu {
+  background: #FFFFFF;
+  border-radius: 8px;
+  width: 300px;
+  height: 450px;
+  text-align: center;
+  padding: 5px;
+  margin: 6rem auto 8.1rem auto;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+}
+
+#Insight {
+  font-family: 'Coda';
+  font-size: 28px;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Gruppo';
+} 
