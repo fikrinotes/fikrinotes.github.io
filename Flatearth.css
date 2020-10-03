@@ -1,0 +1,28 @@
+.judul{
+  background:#5DB5E9;
+  text-align: center;
+  padding:15px;
+  border-radius:8px;
+  font-family: 'Merienda';
+  font-size: 2em;
+}
+.content{
+  margin-top: 20px;
+}
+.image{
+  text-align: center;
+}
+p{
+  font-family: sans-serif;
+  text-indent: 20px;
+}
+@media(max-width:600px){
+  img{
+    height:300px;
+  }
+}
+@media(min-width:601px){
+  img{
+    width: 600px
+  }
+}
