@@ -1,0 +1,29 @@
+body{
+  margin:0;
+}
+.formulir{
+  padding:20px
+}
+.heading{
+  background:-webkit-linear-gradient(bottom,#EBC70D,#EB5A0D);
+}
+.judul{
+  font-family: 'Metamorphous', cursive;
+  text-align: center;
+  font-size: 3em;
+}
+.mainwebpage{
+  font-family: 'Bebas Neue', cursive;
+  font-size:27px;
+  text-align: center;
+}
+a{
+  font-family: 'Gruppo', cursive;
+  text-decoration:none;
+}
+p{
+  margin-top: 25px;
+  padding-left:20px;
+  padding-right:20px;
+  text-indent:20px;
+}
