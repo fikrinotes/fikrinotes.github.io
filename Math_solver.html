@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Math Solver | Fikri Notes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="Math_solver.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Coda&family=Gruppo&family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap" rel="stylesheet">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/7.3.0/math.min.js" integrity="sha512-2Ckw3zmQU6j6oTB5XbhSnQYyRqPDoYKMTVbTllvPKi9Pg1+2V5tV8UXhpn9eGSWU/FHzCHl+t+AJJhFCxOs5Og==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="Math_solver.js" charset="utf-8">
+      
+    </script>
+</head>
+
+<body>
+<div class="heading">
+  <div class="judul">
+    Math Solver
+  </div>
+  <div class="mainwebpage">
+    Fikri Notes
+  </div>
+</div>
+<p align="justify">Pembelajaran matematika seringkali terasa melelahkan. sebenarnya mudah, namun karena terlalu banyak kalkulasi yang harus dilakukan, otak kita menjadi lelah. Nah, karena itu saya merancang program ini untuk menyelesaikan permasalahan matematika sederhana, yaitu persamaan linear 2 variabel. Program ini mengambil input berupa 2 buah persamaan linear 2 variabel dan output nya adalah nilai dari x dan y yang hendak kita cari.</p>
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Keterangan</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <b>Perhatian!!!</b> <br /> website ini merupakan program beta. karena itu, masih terdapat beberapa bug. misalnya, seperti yang anda ketahui bahwa persamaan 2 variabel memiliki koefisien dan konstanta. misalkan koefisien anda adalah 1 ,maka biasanya anda menulis "x" atau "y" langsung tanpa menulis angka 1 didepannya. namun, karena website ini masih dalam tahap pengembangan, anda tetap harus menuliskan "1y" atau "1x".<br />pada saat anda mengetikkan soal, jangan berikan spasi antara karakter-karakter yang anda tulis.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="formulir">
+  <form>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Persamaan Pertama:</label>
+      <input type="email" class="form-control" id="y1" placeholder="Example : 2x+3y=5">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Persamaan Kedua:</label>
+      <input class="form-control" id="y2" placeholder="Example : 3x+4y=7">
+    </div>
+    <button type="button" class="btn btn-primary" onclick="hitung()">Hitung</button> <br />
+    Hasil:
+    <textarea readonly class="form-control" id="hasil" rows="3"></textarea>
+  </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+ <script type="text/javascript" charset="utf-8">
+   $('#myModal').modal('show');
+ </script>
+</body>
+</html>
