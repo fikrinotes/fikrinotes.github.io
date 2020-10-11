@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stopwatch | Fikri Notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Stopwatch.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="header">
+  <div class="judul">STOPWATCH</div>
+  <div class="nama">Fikri Notes</div>
+</div>
+<div class="content">
+  <div align="center">
+    <p class="mys"> F - Stopwatch </p>
+  <textarea  readonly class="form-control" id="hasil" rows="3">00:00:00</textarea><br />
+  <div align="center">
+    <button type="button" class="btn btn-outline-primary" onclick="interval()"> Start </button>
+    <button type="button" class="btn btn-outline-warning" onclick="stop()"> Stop </button>
+  <button type="button" class="btn btn-outline-success" onclick="bersih()"> Clear </button></div>
+</div>
+<script type="text/javascript" src="Stopwatch.js" charset="utf-8">
+  
+</script>
+</body>
+
+</html>
