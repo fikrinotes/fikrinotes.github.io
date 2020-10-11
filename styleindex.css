@@ -43,3 +43,17 @@ body {
 #carouselExampleIndicators{
         padding-top:20px;
       }
+@media (max-width:600px) {
+  #fotoprofil {
+    height: 250px;
+  }
+}
+@media (min-width:605px) {
+  a {
+    font-size: 25px;
+  }
+
+  #fotoprofil {
+    height: 400px;
+  }
+}
