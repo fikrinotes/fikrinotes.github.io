@@ -1,0 +1,37 @@
+body{
+  margin:0;
+}
+.header{
+  background: #BD0A0AF5;
+  padding:20px;
+}
+.content{
+  margin:20px;
+  padding:20px;
+  background:-webkit-linear-gradient(bottom,#1F1F1AFA,#0A3251FA);
+  border-radius:8px;
+  border-color:#E6B60EFA solid;
+}
+.judul{
+  text-align: center;
+  font-family: 'Monoton', cursive;
+  font-size: 40px;
+  color:white;
+}
+.nama{
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 28px;
+}
+#hasil{
+  text-align: center;
+  font-family: 'Graduate', cursive;
+  font-size: 3em;
+  padding-bottom: 10px;
+  height: 100px;
+}
+.mys{
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 2em;
+  color: white;
+}
