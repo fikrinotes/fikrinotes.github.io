@@ -1,0 +1,37 @@
+body{
+  margin:0;
+  background: -webkit-linear-gradient(bottom,#1C68E2,#46BBF4)
+}
+.judul_game{
+  font-family: 'Girassol', cursive;
+  font-size:2em;
+  padding:20px;
+}
+.hasil{
+  font-family: 'Big Shoulders Text', cursive;
+  font-size:1.5em;
+}
+@media(max-width: 599px){
+  .masukan {
+    background: #FFFFFF;
+    border-radius: 8px;
+    width: 329px;
+    height: 467px;
+    text-align: center;
+    padding: 15px;
+    margin: 6rem auto 8.1rem auto;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  }
+}
+@media(min-width:600px){
+  .masukan {
+    background: #FFFFFF;
+    border-radius: 8px;
+    width: 900px;
+    height: 467px;
+    text-align: center;
+    padding: 15px;
+    margin: 6rem auto 8.1rem auto;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  }
+}
