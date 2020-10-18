@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Guess Number Game | Fikri Notes</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     <link rel="stylesheet" href="Guess_number_game.css" type="text/css" />
+     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@300&family=Girassol&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Keterangan</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <b>Rules Permainan:</b> <br />
+          atura permainan ini sederhana. sebuah angka acak telah dipilih oleh program komputer dengan rentang 1-100. jadi angka acak yang mungkin dipilih komputer berada pada rentang tersebut. tugas anda adalah menebak angka apa yang telah dipilih oleh komputer. skor awal anda 100 poin. setiap kali anda gagal menebak, skor anda berkurang 5 poin. Anda dapat menebak terus hingga mendapatkan angka yang benar. good luck!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="masukan">
+  <div class="judul_game">Guess-Number Game</div>
+  
+   <div class="input-group mb-3">
+     <div class="input-group-prepend">
+       <span class="input-group-text" id="basic-addon1">Nama</span>
+     </div>
+     <input type="text" class="form-control" id="nama" placeholder="Nama Anda" aria-label="Username" aria-describedby="basic-addon1">
+   </div>
+   <div class="input-group mb-3">
+     <div class="input-group-prepend">
+       <span class="input-group-text" id="basic-addon1">123</span>
+     </div>
+     <input type="text" class="form-control" id="angka" placeholder=" Angka Tebakan Anda" aria-label="Username" aria-describedby="basic-addon1">
+   </div>
+   <div align="center">
+     <button type="button" class="btn btn-outline-primary" onclick="tombol()"> Check </button>
+   </div>
+   <div class="hasil">Hasil</div>
+     <div><textarea readonly class="form-control" id="hasil" rows="4"></textarea>
+  <hr />
+</div>
+
+  
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script type="text/javascript" charset="utf-8">
+  $('#myModal').modal('show');
+</script>
+<script type="text/javascript" charset="utf-8">
+var  random_number=Math.floor(Math.random()*100+1)
+var skor=100;
+ function tombol(){
+    var nama=document.getElementById('nama').value;
+    var angka=document.getElementById('angka').value;
+    if(angka==random_number){
+      document.getElementById('hasil').innerHTML=" Selamat " +nama+ " !!! setelah sekian lama, akhirnya kamu berhasil menyelesaikan game ini. Skor Anda: "+skor;
+    }
+    else if(angka<random_number){
+      skor=skor-5;
+      document.getElementById('hasil').innerHTML="maaf, tebakan anda salah, tebakan anda terlalu rendah .Skor Anda: "+skor;
+    }
+    else if(angka>random_number){
+      skor=skor-5;
+      document.getElementById('hasil').innerHTML="maaf, tebakan anda salah, tebakan anda terlalu tinggi. Skor Anda: "+skor;
+    }
+    document.getElementById('tabelskor').innerHTML=skor;
+    if(skor==0){
+      document.getElementById('hasil').innerHTML=" Anda gagal."
+    }
+ }
+</script>
+</body>
+
+</html>
