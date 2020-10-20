@@ -31,7 +31,7 @@ body {
 }
 
 #header{
-  background:#178BFD;
+  background: -webkit-linear-gradient(bottom, #0BC1E5,#1B65E8);
   padding:10px;
 }
 
