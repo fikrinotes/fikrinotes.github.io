@@ -1,8 +1,11 @@
 body{
   margin:0;
 }
-.formulir{
+.formulir1{
   padding:20px
+}
+.formulir2{
+  padding: 20px
 }
 .heading{
   background:-webkit-linear-gradient(bottom,#EBC70D,#EB5A0D);
@@ -26,4 +29,16 @@ p{
   padding-left:20px;
   padding-right:20px;
   text-indent:20px;
+}
+#first-tab{
+  font-weight: bold;
+}
+#second-tab{
+  font-weight: bold;
+}
+.label1{
+  color: #E4B31A;
+}
+.label{
+  color:#16CC42;
 }
