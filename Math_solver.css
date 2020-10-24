@@ -42,3 +42,6 @@ p{
 .label{
   color:#16CC42;
 }
+#breadcrumb{
+  font-weight:bold;
+}
