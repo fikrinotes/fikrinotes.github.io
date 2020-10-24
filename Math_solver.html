@@ -44,20 +44,60 @@
     </div>
   </div>
 </div>
-<div class="formulir">
-  <form>
-    <div class="form-group">
-      <label for="exampleFormControlInput1">Persamaan Pertama:</label>
-      <input type="email" class="form-control" id="y1" placeholder="Example : 2x+3y=5">
+<div class="start">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="first-tab" data-toggle="tab" href="#first" role="tab" aria-controls="first" aria-selected="true">2 Variable Equation</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="second-tab" data-toggle="tab" href="#second" role="tab" aria-controls="second" aria-selected="false">3 Variable Equation</a>
+  </li>
+</ul>
+
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+    
+    <div class="formulir1">
+      <form>
+        <div class="form-group">
+          <label class="label1" for="exampleFormControlInput1">Persamaan Pertama:</label>
+          <input type="email" class="form-control" id="y1" placeholder="Example : 2x+3y=5">
+        </div>
+        <div class="form-group">
+          <label class="label1" for="exampleFormControlInput1">Persamaan Kedua:</label>
+          <input class="form-control" id="y2" placeholder="Example : 3x+4y=7">
+        </div>
+        <button type="button" class="btn btn-outline-warning" onclick="hitung()">Hitung</button> <br />
+        Hasil:
+        <textarea readonly class="form-control" id="hasil" rows="3"></textarea>
+      </form>
     </div>
-    <div class="form-group">
-      <label for="exampleFormControlInput1">Persamaan Kedua:</label>
-      <input class="form-control" id="y2" placeholder="Example : 3x+4y=7">
-    </div>
-    <button type="button" class="btn btn-primary" onclick="hitung()">Hitung</button> <br />
-    Hasil:
-    <textarea readonly class="form-control" id="hasil" rows="3"></textarea>
-  </form>
+    
+  </div>
+  <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="profile-tab">
+    
+  <div class="formulir2">
+    <form>
+      <div class="form-group">
+        <label class="label" for="exampleFormControlInput1">Persamaan Pertama:</label>
+        <input type="text" class="form-control" id="ye1" placeholder="Example : 2x+3y+4z=9">
+      </div>
+      <div class="form-group">
+        <label class="label" for="exampleFormControlInput1">Persamaan Kedua:</label>
+        <input class="form-control" id="ye2" placeholder="Example : 3x+4y+5z=12">
+      </div>
+      <div class="form-group">
+        <label class="label" for="exampleFormControlInput1">Persamaan Ketiga:</label>
+        <input class="form-control" id="ye3" placeholder="Example : 4x+5y+6z=15">
+      </div>
+      <button type="button" class="btn btn-outline-success" onclick="calculate()">Hitung</button> <br />
+      Hasil:
+      <textarea readonly class="form-control" id="secondResult" rows="3"></textarea>
+    </form>
+  </div>
+  
+  </div>
+</div>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
