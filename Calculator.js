@@ -45,15 +45,15 @@ function bnol() {
 }
 function bbk() {
   document.getElementById("layar").innerHTML += '(';
-  result+='('
+  result+="("
 }
 function btk() {
   document.getElementById("layar").innerHTML += ')';
-  result+=')'
+  result+=")"
 }
 function btitik() {
   document.getElementById("layar").innerHTML += '.';
-  result+='.'
+  result+="."
 }
 
 function bkali() {
