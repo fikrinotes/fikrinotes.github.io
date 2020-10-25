@@ -43,6 +43,18 @@ function bnol() {
   document.getElementById("layar").innerHTML += '0';
   result+='0'
 }
+function bbk() {
+  document.getElementById("layar").innerHTML += '(';
+  result+='('
+}
+function btk() {
+  document.getElementById("layar").innerHTML += ')';
+  result+=')'
+}
+function btitik() {
+  document.getElementById("layar").innerHTML += '.';
+  result+='.'
+}
 
 function bkali() {
   document.getElementById("layar").innerHTML += '×';
