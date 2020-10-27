@@ -28,6 +28,7 @@ body{
 }
 #IntroToCS{
   font-family: 'Coda', cursive;
+  padding:20px;
 }
 a{
   text-decoration:none;
