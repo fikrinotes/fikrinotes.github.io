@@ -30,6 +30,9 @@ body{
   font-family: 'Coda', cursive;
   padding:20px;
 }
+#breadcrumb{
+  font-weight:bold;
+}
 a{
   text-decoration:none;
   font-family: 'Gruppo', cursive;
