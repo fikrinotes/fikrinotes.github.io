@@ -2,53 +2,38 @@
 <html>
 
 <head>
-    <link rel="icon" href="logo_fix.png" height=250px>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>contact</title>
+    <title>Contact Me If You Have Some Question</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Federant&family=Oxanium:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
-<link rel="stylesheet" href="Gaya.css" title="" type="text/css" />
-<style type="text/css" media="all">
-h1{
-  font-family:cursive;
-}
-label{
-  font-family:cursive;
-}
-.tombol{
-  border-radius:5px;
-}
-img{
-  width:150px;
-}
-h2{
-  font-family:cursive;
-}
-.kirim{
-  font-family:cursive;
-}
-
-  
-</style>
+<link rel="stylesheet" href="Contact-me.css" title="" type="text/css" />
 <body>
+  <div class="fikrinotes">Fikri Notes</div>
 <div class='kartu'>
- <h1>Contact Me:</h1>
-
+  <div class="contact"><h1>Contact:</h1></div>
+<hr />
 <form action="https://formspree.io/xwkrjkdj" method="POST">
-  <label> <br />
-    <b>Alamat email:</b> <br />
-    <input required style="border-radius:4%" type="text" name="_replyto">
-  </label> <br />
-  <label>
-    <b>Pesan anda:</b> <br />
-    <textarea required style="border-radius:8%" name="message"></textarea>
-  </label> <br />
+  <div class="form-group">
+    <label for="exampleInputEmail1">Alamat Email:</label>
+    <input required type="email" name="replyto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Pesan Anda:</label>
+    <textarea required class="form-control" id="exampleFormControlTextarea1" name="message" rows="5"></textarea>
+  </div>
   <!-- your other form fields go here -->
-  <button type="submit" class="tombol"><div class="kirim">kirim</div></button>
-  </form>
-  <h2>Sosial Media:</h2>
-<a href="https://instagram.com/fikrimulyana_s"><img align="center" src="instagramlogo.jpeg" alt="myinstagram" ></a><br />
-<a href="https://wa.me/+6282392067708"><img align="center" src="WhatsApp.png" alt="myWA" /></a>
+  <button type="submit" type="button" class="btn btn-outline-success">Success</button>
+  </form> <br />
+  <div class="sosmed">Sosial Media:</div>
+<div class="logososmed">
+<div class="item"><a href="https://instagram.com/fikrimulyana_s"><img src="https://img.icons8.com/color/48/000000/instagram-new.png"/></a></div>
+<div class="item"><a href="https://wa.me/+6282392067708"><img src="https://img.icons8.com/color/48/000000/whatsapp.png"/></a></div>
+<div class="item"><a href="http://line.me/ti/p/~fikrimulyana_s"><img src="https://img.icons8.com/color/48/000000/line-me.png"/></a></div>
+<div class="item"><a href="mailto: fikrimulyanasetiawan@gmail.com"><img src="https://img.icons8.com/color/48/000000/gmail--v1.png"/></a></div>
+</div>
 </div>
 </body>
 </html>
