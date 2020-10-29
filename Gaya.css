@@ -1,16 +1,63 @@
-.kartu{
-  background:#FFFFFF;
-  border-radius: 8px;
-  width: 329px;
-  height:467px;
+hr{
+  border-color:#0971DF;
+  height:3px;
+}
+.logososmed{
+  display: flex;
+  justify-content: center;
+}
+.item{
+  margin: 7px;
+}
+.fikrinotes{
+  font-family: 'bebas neue',cursive;
   text-align: center;
-  margin: 6rem auto 8.1rem auto;
-  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  font-size: 3em;
+  color:white;
+  padding:30px;
+  text-decoration: none;
 }
 body{
-  background: -webkit-linear-gradient(bottom, #2dbd6e, #a6f77b);
-  background-repeat: no-repeat;
+  background-image:url('backgroundforcontact.jpeg');
+  background-repeat:repeat-x;
+  background-position:0px -100px;
 }
-.tombol{
-  font-family: Arial, Helvetica, sans-serif
+.contact{
+  font-family: 'Federant', cursive;
+}
+label{
+  font-family: 'Oxanium', cursive;
+  font-weight: bold;
+}
+.sosmed{
+  font-family: 'Oxanium', cursive;
+  font-size: 1.5em;
+}
+@media (max-width:599px) {
+  .kartu {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    width:325px;
+    height: auto;
+    position: relative;
+    top:-60px;
+    padding:15px;
+    text-align: center;
+    margin: 6rem auto 8.1rem auto;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  }
+}
+@media (min-width:600px) {
+  .kartu {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    width: auto;
+    height: auto;
+    position: relative;
+    top:-60px;
+    padding: 15px;
+    text-align: center;
+    margin: 6rem auto 8.1rem auto;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  }
 }
