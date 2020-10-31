@@ -1,3 +1,132 @@
+.background-timeline{
+  background:#4E5054;
+  padding:15px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+h4{
+  color:#30A9F6;
+}
+.pe{
+  text-align: justify;
+}
+.programmingJourney{
+  color:white;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+
+@media (max-width:599px) {
+  .timeline {
+    border-left: 10px solid #FFFFFF;
+  }
+  .time {
+    background: #FFFFFF;
+    padding: 20px;
+    margin: 25px;
+    margin-bottom:60px;
+    border-radius: 7px;
+    border: 3px solid #FFAC00;
+  }
+  
+  .time:before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 27px;
+    background-color: #FFAC00;
+    border-radius: 50%;
+    border: 4px solid #FFFFFF;
+    position: absolute;
+    left: 8px;
+  }
+  
+  h4:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-color: transparent #FFAC00 transparent transparent;
+    border-width: 13px;
+    position: absolute;
+    left: 27px;
+  }
+}
+@media (min-width:600px) {
+  .time {
+    background: #FFFFFF;
+    width:300px;
+    padding: 20px;
+    margin: 25px;
+    margin-bottom:60px;
+    border-radius: 7px;
+    border: 3px solid #FFAC00;
+  }
+  
+  /*.time:before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 27px;
+    background-color: #FFAC00;
+    border-radius: 50%;
+    border: 4px solid #FFFFFF;
+    position: absolute;
+    left: 460px;
+  }
+  
+  h4:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-color: transparent #FFAC00 transparent transparent;
+    border-width: 13px;
+    position: absolute;
+    left: 27px;
+  }*/
+  .timeline:before{
+    content:"";
+    position:absolute;
+    width:8px;
+    height:3075px;
+    background: white;
+    left:470px;
+  }
+
+  
+   .time:nth-child(odd) {
+     position: relative;
+     left:560px;
+   }
+  .timeline .time:nth-child(even):before{
+    content: "";
+    display: block;
+    width: 27px;
+    height: 27px;
+    background-color: #FFAC00;
+    border-radius: 50%;
+    border: 4px solid #FFFFFF;
+    position: absolute;
+    left:460px;
+  }
+  .timeline .time:nth-child(odd):before{
+    content: "";
+    display: block;
+    width: 27px;
+    height: 27px;
+    background-color: #FFAC00;
+    border-radius: 50%;
+    border: 4px solid #FFFFFF;
+    position: absolute;
+    left:-145px;
+  }
+}
+
+
+
 .LatestUpdate{
   max-height: 500px;
   display:flex;
