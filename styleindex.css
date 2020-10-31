@@ -14,11 +14,13 @@ h4{
 .programmingJourney{
   color:white;
   text-align: center;
-  font-size: 2.5em;
 }
 
 
 @media (max-width:599px) {
+  .programmingJourney{
+  font-size:2.5em;
+  }
   .timeline {
     border-left: 10px solid #FFFFFF;
   }
@@ -55,6 +57,9 @@ h4{
   }
 }
 @media (min-width:600px) {
+  .programmingJourney{
+  font-size:4em;
+  }
   .time {
     background: #FFFFFF;
     width:300px;
