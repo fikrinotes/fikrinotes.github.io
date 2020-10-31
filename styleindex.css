@@ -137,6 +137,7 @@ h4{
   display:flex;
   overflow-x: auto;
   background: #D9DEE3;  
+  padding-bottom:20px;
 }
 .LatestUpdate .item{
   margin:10px;
@@ -188,7 +189,7 @@ a{
 
 body {
   margin:0px;
-  background-image:url('background_main_menu.JPG');
+  background:white;
 }
 
 #header{
