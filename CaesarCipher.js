@@ -57,33 +57,39 @@ var hasil = {
   25: 'y',
   26: 'z'
 };
-alert("untuk pengalaman yang lebih baik,buka laman ini pada perangkat mobile")
+
 function encryption() {
   var kat=document.getElementById('masukan').value;
   var kata=kat.toLowerCase();
+  var kata1=kata.split(" ")
+  var word=kata1.join("-")
   var x = Number(document.getElementById('pergeseran').value);
   
-  var n = kata.length;
+  var n = word.length;
   var a = '';
   var akhir ;
   var b=0;
   while (b < n) {
-    if (kata[b] in enkripsi) {
-      akhir= enkripsi[kata[b]] + x;
-      if (akhir > 26) {
-        akhir = enkripsi[kata[b]] + x - 26;
+    if (word[b] in enkripsi) {
+      akhir= enkripsi[word[b]] + x;
+      while (akhir > 26) {
+        akhir = akhir - 26;
       }
       a+= hasil[akhir];
     }
-    else{a +=kata[b];}
+    else{
+      a+=word[b];
+    }
     
     b = b +1;
-    document.getElementById('out').innerHTML = a;
   }
+  var result=a.split("-");
+  var results=result.join(" ")
+  document.getElementById('hasil').innerHTML=results;
 
 }
 
 function tes() {
-  var x = document.getElementById('pergeseran').value;
+  var x = document.getElementById('pergeseran').word;
   document.getElementById('out').innerHTML = x
 }
