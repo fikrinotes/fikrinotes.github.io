@@ -2,30 +2,74 @@
 <html>
 
 <head>
-     <link rel="icon" href="logo_fix.png" height=250px>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Alat Enkripsi pesan dengan teknik caesar cipher | Fikri Notes</title>
+    <title>Caesar Cipher | teknik enkripsi ala julius caesar | Fikri Notes</title>
     <script type="text/javascript" charset="utf-8" src="CaesarCipher.js">
     </script>
     
     <link rel="stylesheet" href="Stylecaesar.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <p> </p><br /><h1 align="center"><b>Caesar Cipher</b></h1>
-<div class="kartu">
-  <label><div class="teks"><b>Input Kata:</b></div>
-  <input placeholder="masukkan kata/kalimat..." type="text"  id="masukan" /></label><br /><div class="note">(Catatan:gunakan tanda <b>_</b> atau <b>-</b> sebagai pengganti spasi)</div><br />
-  
-  <label class="teks"><b>Pergeseran:</b><br />
-  <textarea placeholder="isi menggunakan angka..." height="128" type="text"  id="pergeseran"  ></textarea></label><br /> <br />
-   <button  class="tombol"  onclick="encryption()" ><b>Enkripsi</b></button>
-  <p class="teks">Hasil:</p>
-  <textarea readonly rows="10" cols="30" width="240" placeholder="bagian ini tidak diisi..." id="out"></textarea> 
-</div>
-  <hr color="black"/>
-  <p align="center">copyright &copy;fikri mulyana setiawan</p>
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Keterangan</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div align="justify" class="modal-body">
+          <b>Perhatian</b> <br /> Program yang anda liha sekarang berfungsi untuk meng-enkripsi pesan anda. tulis pesan yang ingin anda enkripsi pada bagian plain text, dan isi nilai pergeserannya pada bagian "kunci enkripsi" . untuk keterangan lebih lanjut, anda bisa membacanya <a href="EnkripsiCaesar.html">disini</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header">
+    <div class="title">CAESAR CIPHER</div>
+    <div class="sub-title">Fikri Notes </div>
+  </div>
+  <nav aria-label="breadcrumb" id="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item"><a href="Javascriptproject-menu.html"> Javascript Project</a></li>
+      <li class="breadcrumb-item"><a href="Math_solver.html">Caesar Cipher</a></li>
+    </ol>
+  </nav>
+  <div class="kartu">
+    <div class="judulkartu">Encryption Engine</div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Plain Text</span>
+      </div>
+      <input id="masukan" type="text" class="form-control" placeholder="ketik  disini" aria-label="input" id="masukan" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Kunci Enkripsi</span>
+      </div>
+      <input id="pergeseran" type="text" class="form-control" placeholder="kunci enkripsi" aria-label="input" aria-describedby="basic-addon1">
+    </div>
+    <div class="tombol"><button type="button" class="btn btn-outline-warning"  onclick="encryption()">Eknripsi-kan</button></div>
+    <div class="hasil">Hasil</div>
+    <div><textarea readonly class="form-control" id="hasil" rows="4"></textarea>
+    </div>
+  </div>
+  <div class="copyright">copyright &copy; fikri mulyana setiawan</div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script type="text/javascript" charset="utf-8">
+    $('#myModal').modal('show');
+  </script>
 </body>
 
 </html>
