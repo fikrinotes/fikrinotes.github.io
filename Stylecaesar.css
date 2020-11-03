@@ -1,48 +1,60 @@
-.kartu {
-  background: #FFFFFF;
-  border-radius: 8px;
-  width: 315px;
-  height: 490px;
-  padding: 10px;
+body{
+  margin:0px;
+}
+.header{
+  background:-webkit-linear-gradient(right,#10AEC1,#A4DFE6,#10AEC1);
+}
+.judulkartu{
+  font-size: 1.5em;
+  padding:20px;
+}
+.hasil{
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 2em;
+  margin-top:24px;
+  margin-bottom:15px;
+}
+.tombol{
+  margin-top:25px;
+}
+.copyright{
   text-align: center;
-  margin: 4px auto 8.1rem auto;
-  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  padding:15px;
+  background:-webkit-linear-gradient(right,#10AEC1,#A4DFE6,#10AEC1);
+}
+@media (max-width:599px){
+  .kartu {
+    background: #FFFFFF;
+    border-radius: 8px;
+    width: 329px;
+    height: 474px;
+    text-align: center;
+    padding: 15px;
+    margin: 6rem auto 8.1rem auto;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  }
 }
 
-body {
-  background: -webkit-linear-gradient(bottom,#0B6DFF,#48F06D);
-  background-repeat: no-repeat;
+@media (min-width:600px) {
+  .kartu {
+    background: #FFFFFF;
+    border-radius: 8px;
+    width: 900px;
+    height: 474px;
+    text-align: center;
+    padding: 15px;
+    margin: 6rem auto 8.1rem auto;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  }
 }
 
-.tombol {
-  font-family: Arial, Helvetica, sans-serif
+.title{
+  font-family: 'Monoton', cursive;
+  text-align: Center;
+  font-size:3em;
 }
-
-h1 {
-  font-family: cursive;
-  font-size: 45px;
+.sub-title{
+  text-align: Center;
+  font-size:2em;
+  font-family: 'Bebas Neue', cursive;
 }
-
-.tombol {
-  font-family: cursive;
-  border-radius: 5%;
-  width: 100px;
-  height: 30px;
-}
-
-.teks {
-  font-family: cursive;
-  font-size: 20px;
-}
-
-input {
-  border-radius: 8%;
-}
-
-textarea {
-  border-radius: 5%;
-}
-
-.note {
-  font-family: sans-serif;
-  font-size: 10px;} 
