@@ -25,7 +25,6 @@ var enkripsi = {
   'x': 24,
   'y': 25,
   'z': 26,
-  ',': 27
 };
 
 var hasil = {
@@ -55,7 +54,6 @@ var hasil = {
   24: 'x',
   25: 'y',
   26: 'z',
-  27: ','
 };
 
 function encryption() {
