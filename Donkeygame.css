@@ -1,0 +1,49 @@
+ul{
+  background:-webkit-linear-gradient( right,#05A425,#60F7A7 );
+}
+li{
+  justify-content:justify;
+  
+}
+body{
+  margin:0;
+}
+#button{
+  padding:15px;
+}
+#skor{
+  background:-webkit-linear-gradient(right,#77E596,#1AFF5A,#0C9031);
+  padding:15px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+hr{
+  border:0;
+  border-top : 2px dashed #000000;
+  text-align: center;
+  position:relative;
+}
+#car{
+  position: absolute;
+  left:70px;
+}
+#donkey{
+  position: absolute;
+  height: 64px;
+  width:64px;
+}
+.kanvas{
+  background: #92F497;
+  padding-top:100px;
+  padding-bottom:100px;
+  border: 3px solid #05A425;
+}
+.road1 {
+  background: #757575;
+  height: 50px;
+}
+.road2 {
+  height: 50px;
+  background: #757575;
+}
