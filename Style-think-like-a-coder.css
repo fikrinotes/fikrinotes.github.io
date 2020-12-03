@@ -1,0 +1,54 @@
+.judul {
+  font-size: 3em;
+  text-align: center;
+  color:#2E90FF;
+  padding-top: 20px;
+}
+p{
+  text-indent: 10px;
+  text-align: justify;
+  padding-left:15px;
+   padding-right:15px;
+}
+
+
+.logo{
+  display: flex;
+  font-family: 'Bebas Neue';
+  font-size: 2em;
+  color: white;
+}
+.imglogo{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+ol{
+  padding-right:30px;
+}
+li{
+  text-align: justify;
+}
+.rincian{
+  text-align: center;
+}
+small{
+  padding-left:11px;
+  padding-right:5px;
+  font-style: italic;
+}
+.gambarutama{
+  text-align: center;
+}
+@media (min-width:600px) {
+  .gambarutama>img{
+    width: 600px;
+  }
+}
+@media (max-width:599px) {
+  .gambarutama>img{
+    width: 300px;
+  }
+}
+.copyright{
+  text-align:center;
+}
