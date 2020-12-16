@@ -1,0 +1,59 @@
+.container2{
+  display:flex;
+  overflow-x: auto;
+  background: #2871FD4D;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.container1 {
+  display: flex;
+  overflow-x: auto;
+  background: #80FF8EA8;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+ 
+.logo{
+  display: flex;
+  font-family: 'Bebas Neue';
+  font-size: 2em;
+  color: white;
+}
+.imglogo{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.item1 img{
+  height:200px;
+  padding:10px;
+}
+.item1{
+  margin-left:5px;
+  border-radius:8px;
+  border : 6px solid #02EF1D;
+  margin-right:20px;
+}
+.klaster1 {
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 2.5em;
+  text-align: center;
+   background: #80FF8EA8;
+   padding:20px;
+}
+.item2 img{
+  height:200px;
+  padding:10px;
+}
+.item2{
+  margin-left:5px;
+  border-radius:8px; 
+  border : 6px solid #2871FD;
+  margin-right:20px;
+}
+.klaster2 {
+  font-family: 'Big Shoulders Text', cursive;
+  font-size: 2.5em;
+  text-align: center;
+  background: #2871FD4D; 
+  padding:20px;
+}
