@@ -36,25 +36,16 @@ small{
   padding-right:5px;
   font-style: italic;
 }
-.gambarutama{
-  text-align: center;
-}
-.diagram{
+.gambar{
   text-align: center;
 }
 @media (min-width:600px) {
-  .gambarutama>img{
-    width: 600px;
-  }
-  .diagram>img{
+  .gambar>img{
     width: 600px;
   }
 }
 @media (max-width:599px) {
-  .gambarutama>img{
-    width: 300px;
-  }
-  .diagram>img{
+  .gambar>img{
     width: 300px;
   }
 }
@@ -64,3 +55,11 @@ small{
 .ket_dokumentasi{
   text-align: center;
 }
+h3{
+  color:#2E90FF;
+}
+.rumus{
+  display: flex;
+  overflow-x: auto;
+}
+
