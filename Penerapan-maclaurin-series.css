@@ -1,0 +1,88 @@
+.judul {
+  font-size: 2em;
+  text-align: center;
+  color: #2E90FF;
+  padding-top: 20px;
+}
+
+p {
+  text-indent: 10px;
+  text-align: justify;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.logo {
+  display: flex;
+  font-family: 'Bebas Neue';
+  font-size: 2em;
+  color: white;
+}
+
+.imglogo {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+ol {
+  padding-right: 30px;
+}
+
+li {
+  text-align: justify;
+}
+
+.rincian {
+  text-align: center;
+}
+
+small {
+  padding-left: 11px;
+  padding-right: 5px;
+  font-style: italic;
+}
+
+.gambar {
+  text-align: center;
+}
+
+@media (min-width:600px) {
+  .gambar>img {
+    width: 600px;
+  }
+}
+
+@media (max-width:599px) {
+  .gambar>img {
+    width: 300px;
+  }
+}
+
+.copyright {
+  text-align: center;
+}
+
+.ket_dokumentasi {
+  text-align: center;
+}
+
+h4 {
+  color: #2E90FF;
+  text-indent: 10px;
+}
+
+.rumus {
+  padding: 10px;
+  margin: 7px;
+  border-radius: 9px;
+  border: solid #919294;
+  overflow-x: auto;
+}
+.result{
+  background: #266DE870;
+  border-radius:8px;
+  padding:8px;
+  margin:8px;
+  text-align: center;
+}
