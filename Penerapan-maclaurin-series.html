@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9QDCNTY1F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-T9QDCNTY1F');
+    </script>
+    <link rel="icon" href="logo_fix.png" height=250px>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apakah maclaurin series benar benar bisa dipakai? | Fikri Notes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="Penerapan-maclaurin-series.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark ">
+    <div class="logo">
+      <div class="imglogo"><img src="fikri_notes.png" alt="logo" width="40px" /></div>
+      <div>Fikri Notes</div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Physics_menu.html">Fisika</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Math-menu.html">Matematika</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="computerscience.html">Computer Science</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Javascriptproject-menu.html">Javascript Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact-me.html">Contact Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="TermOfUse.html">Terms of Use</a>
+        </li>
+        <div width="auto" background-color="black">
+          <script async src="https://cse.google.com/cse.js?cx=d35b9e14fb3d25e66"></script>
+          <div class="gcse-search"></div>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Quick link
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="Donkeygame.html">Donkey.js Game</a>
+              <a class="dropdown-item" href="Calculator.html">Calculator</a>
+              <a class="dropdown-item" href="CaesarCipher.html">Caesar Cipher</a>
+              <a class="dropdown-item" href="BMI_calculator.html">BMI Calculator</a>
+              <a class="dropdown-item" href="Math_solver.html">Math Solver</a>
+              <a class="dropdown-item" href="Stopwatch.html">Stopwatch</a>
+              <a class="dropdown-item" href="Guess_number_game.html">Guess-Number Game</a>
+              <a class="dropdown-item" href="https://fikrimulyana.github.io/">My Previous Website</a>
+            </div>
+          </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="judul">Apakah maclaurin series benar benar bisa dipakai?</div>
+  <div class="rincian">
+    <small>oleh : Fikri Mulyana Setiawan</small>
+    <small>8 Januari 2021</small>
+  </div>
+  <hr />
+  <p class="gambar"><img src="img-for-maclaurin.jpeg" alt="image" /></p>
+  <p>pada <a href="https://fikrimulyanasetiawan.github.io/Maclaurin-series.html">pembahasan sebelumnya</a>, saya sudah membahas tentang deret maclaurin secara singkat.mungkin anda penasaran, apakah nilai yang dihasilkan dari deret maclaurin itu hasil yang tepat atau hanya perkiraan saja. nah, disini saya akan menunjukkan beberapa hal yang membuktikan bahwa nilai yang dihasilkan dari deret maclaurin adalah hasil yang tepat.
+  </p>
+  <p>
+    misalkan anda memiliki fungsi $f(x)=(1+x)^n$. sekarang kita coba terapkan konsep deret maclaurin pada gungsi ini.
+  </p>
+  <div class="rumus">
+    $f(x)=(1+x)^n , f(0)=1$
+    $f'(x)=n(1+n)^{n-1}, f'(0)=n$
+    $f''(x)=n(n-1)(1+n)^{n-2}, f'(0)=n(n-1)$
+    $f'''(x)=n(n-1)(n-2)(1+n)^{n-3}, f'(0)=n(n-1)(n-2)$,  etc.
+  </div>
+  <p>sehingga deret maclaurin fungsi tersebut akan menjadi:</p>
+  <div class="rumus">
+    <div>$f(x)=f(0)+f'(0)x+\frac{f"(0)}{2!}x^2 +\frac{f^{(3)}(0)}{3!}x^3 +\frac{f^{(4)}(0)}{4!}x^4+...$</div>
+    <div>$f(x)=1+nx+\frac{(n)(n-1)}{2!}x^2+\frac{n(n-1)(n-2)}{3!}x^3+\frac{n(n-1)(n-2)(n-3)}{4!}x^4+...$</div>
+  </div>
+  <div class="rumus">
+    $(1+x)^n=1+nx+\frac{(n)(n-1)}{2!}x^2+\frac{n(n-1)(n-2)}{3!}x^3+\frac{n(n-1)(n-2)(n-3)}{4!}x^4+...$
+  </div>
+  <p>
+    mari kita coba hal yang sedikit menantang. bisakah anda menghitung $(1,1)^4$. mungkin anda akan mencobanya dengan cara "tradisional" mengalikan 1,1 dengan 1,1 sebanyak 4 kali.tapi kalau $(1,1)^10 bagaimana? masih sanggup?
+  </p>
+  <p>
+    dengan menggunakan deret maclaurin, kita akan mencoba menghitung nilai ini tanpa perlu berpikir dengan keras. kita tau bahwa $(1,1)^4$ sama dengan $(1+0,1)^4$. disinilah kita mulai permainan kita
+<div class="rumus">
+  <p>$(1+x)^n=1+nx+\frac{(n)(n-1)}{2!}x^2+\frac{n(n-1)(n-2)}{3!}x^3+\frac{n(n-1)(n-2)(n-3)}{4!}x^4+\frac{n(n-1)(n-2)(n-3)(n-4)}{5!}x^5+...$</p>
+  <p>
+    $(1+0,1)^4=1+4(0,1)+\frac{4×3}{2!}(0,1)^2+\frac{4×3×2}{3!}(0,1)^3+\frac{4×3×2×1}{4!}(0,1)^4$</p>
+    <p>$(1+0,1)^4=1+4(0,1)+6(0,01)+4(0,001)+0,0001$</p>
+    <p>$(1+0,1)^4=1+0,4+0,06+0,004+0,0001$</p>
+    <p>$(1+0,1)^4=1,4641$</p>
+</div>
+  </p>
+  <p>Coba kalian hitung $(1,1)^4$ dengan kalkulator sekarang juga, jawabannya persis sama. ini menunjukkan bahwa deret maclaurin bukan hanya nilai pendekatan/aproksimasi, melainkan nilai yang sangat tepat.  </p>
+  <p>masih belum percaya? akan saya tunjukkan satu hal lagi. pada saat kelas 11 SMA, tentunya anda pernah belajar bahwa $cos2\theta =cos^2\theta-sin^2\theta$. kita semua tau itu. kita akan menunjukkan hal yang sama dengan menggunakan deret maclaurin, dan sedikit pemahaman tentang bilangan imajiner.
+  </p>
+  <p>oke. pada blog sebelumnya saya sudah memberitahukan bahwa $e^{i\theta}= cos\theta +isin\theta$ .bagaimana kalau $e^{i2\theta}$?
+  $e^{i2\theta}$ sama dengan $cos2\theta+isin2\theta$, logis bukan?. tapi karena $e^{i2\theta}$ bisa diekspresikan juga sebagai $(e^{i\theta})^2$, maka $e^{i2\theta}$ juga sama nilainya dengan $(cos\theta+isin\theta)^2$.</p>
+  <p>dengan kata lain:</p>
+  <div class="rumus">
+    <p>$cos2\theta+isin2\theta=(cos\theta+isin\theta)^2$</p>
+    <p>$cos2\theta+isin2\theta=cos^2\theta+2cos\theta×isin\theta+(isin\theta)^2$</p>
+    <p>$cos2\theta+isin2\theta=cos^2\theta+2cos\theta×isin\theta-sin^2\theta$</p>
+    <p>$cos2\theta=cos^2\theta-sin^2\theta+i(2cos\theta sin\theta+sin2\theta)$</p>
+  </div>
+  <p>dalam konsep bilangan kompleks, jika bilangan kompleks $z_1=z_2$ dimana $z_1=x_1+iy_1$ dan $z_2=x_2+iy_2$ (x adalah bagian real dari bilangan kompleks, dan y adalah bagian imajiner dari bilangan kompleks), maka $x_1=x_2$ dan $y_1=y_2$. pada persamaan di atas, bisa dibilang bahwa $x_1=cos\theta$ dan $x_2=cos^2\theta-sin^2\theta$.jadi, </p>
+  <div class="rumus">
+    $x_1=x_2$
+    $cos2\theta=cos^2\theta-sin^2\theta$
+    $y_1=y_2$
+    $0=$2cos\theta sin\theta+sin2\theta$
+    $sin2\theta=2sin\theta cos\theta$
+  </div>
+  <p>dari sana lah kita bisa mengetahui bahwa:</p>
+  <div class="result">$cos2\theta=cos^2\theta-sin^2\theta$</div>
+  <p>dan</p>
+  <div class="result">$sin2\theta=2sin\theta cos\theta$</div>
+  <p>sekarang,erbukti bahwa deret maclaurin benar benar menunjukkan nilai yang tepat. bisakah anda menunjukkan bukti lain?</p>
+  <hr />
+  <p class="copyright">&copy; Fikri Mulyana Setiawan</p>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>
