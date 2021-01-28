@@ -1,0 +1,64 @@
+.botName{
+  font-family: 'Kelly Slab', cursive;
+  background:#2432D3 ;
+  padding:7px;
+  text-align: center;
+  font-size:2.5em;
+  color: white;
+}
+.robot{
+  width: 230px;
+  border-radius: 10px;
+  border: #1C1C1D36 1px  solid;
+  margin:20px;
+  padding:15px;
+}
+.human{
+  /*visibility: hidden;*/
+  max-width: 230px;
+  border-radius: 10px;
+  border: #1C1C1D36 1px  solid;
+  padding:15px;
+  margin:20px;
+  position: relative;
+  left: 90px;
+  background: #5380FF;
+  color: white;
+}
+div .input .button{
+  background:#D8F1FD;
+}
+.d-flex{
+  padding:20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+#masukan{
+  margin-right: 10px;
+}
+.display{
+  overflow-y: auto;
+  height: 460px;
+}
+.choose{
+  position: relative;
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  bottom:-5px;
+}
+.choose .item{
+  padding: 10px;
+}
+a .robot{
+  text-decoration:none;
+}
+span img {
+  position: relative;
+  width: 60px;
+  bottom:8px;
+}
