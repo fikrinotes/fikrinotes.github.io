@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>F - ChatBot | Fikri Notes</title>
+    <link rel="stylesheet" href="ChatBot.css" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Geostar+Fill&family=Kelly+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Keterangan</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <b>Perhatian!!!</b> <br /> 
+          Program ini sering disebut dengan rule-based chatbot, artinya chatbot yang telah diprogram untuk menerima perintah spesifik dan jawaban spesifik yang telah ditentukan sebelumnya. dengan kata lain, program ini dibuat tanpa kecerdasan buatan (AI). Karena itu, jika bot ini tidak mengetahui jawaban dari pertanyaan anda, "dia" akan merujuk ke wikipedia, google search, ataupun wolfram alpha 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="botName">
+    <span><img src="Headbot.png" alt="foto" /></span>F - ChatBot 
+  </div>
+  <div class="display">
+  <div class="robot">
+    Selamat datang! Perkenalkan, saya adalah F - ChatBot, asisten anda. apa yang anda inginkan untuk saya lakukan?
+  </div>
+  </div>
+  <div class="choose">
+    <div class="item"><a href="https://fikrimulyanasetiawan.github.io/Calculator.html" class="btn btn-outline-warning">Calculator</a>
+    </div>
+    <div class="item"><a href="https://fikrimulyanasetiawan.github.io/CaesarCipher.html" class="btn btn-outline-warning">CaesarCipher</a>
+    </div>
+    <div class="item"><a href="https://fikrimulyanasetiawan.github.io/BMI_calculator.html" class="btn btn-outline-warning">BMICalculator</a>
+    </div>
+    <div class="item"><a href="https://fikrimulyanasetiawan.github.io/Math_solver.html" class="btn btn-outline-warning">MathSolver</a>
+    </div>
+    <div class="item"><a href="Donkeygame.html" class="btn btn-outline-warning">DonkeyGame</a>
+    </div>
+    <div class="item"><a href="https://fikrimulyanasetiawan.github.io/Stopwatch.html" class="btn btn-outline-warning">Stopwatch</a>
+    </div>
+    </div> 
+  </div>
+  <div class="d-flex">
+      <input id="masukan" class="form-control " type="text" placeholder="Ketikkan pesan anda..." aria-label=".form-control-lg example">
+      <button onclick="send()" class="btn btn-primary" >kirim</button>
+  </div>
+  
+
+<script type="text/javascript" charset="utf-8" src="ChatBot.js">
+</script>
+<script type="text/javascript" charset="utf-8">
+  $('#myModal').modal('show');
+</script>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+</script>  
+</body>
+
+</html>
