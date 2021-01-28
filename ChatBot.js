@@ -84,10 +84,12 @@ function send() {
       var newDiv = document.createElement("div");
       newDiv.setAttribute('class', 'robot');
       document.getElementsByClassName('display')[0].appendChild(newDiv);
+      ad=ask.split("+");
+      adw=ad.join("%2B")
       add=str.join('+');
       addr=str.join('_')
       main1="https://www.wolframalpha.com/input/?i="
-      address1=main1+add;
+      address1=main1+adw;
       main2 = "https://id.m.wikipedia.org/wiki/"
       address2 = main2 + addr;
       main3 = "https://www.google.com/search?q="
