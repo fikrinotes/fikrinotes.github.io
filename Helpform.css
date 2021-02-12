@@ -17,13 +17,13 @@ hr{
   padding:30px;
   text-decoration: none;
 }
+.contact{
+  font-family: 'Federant', cursive;
+}
 body{
   background-image:url('bghelpform.jpg');
   background-repeat:repeat-x;
   background-position:50px -600px;
-}
-.contact{
-  font-family: 'Federant', cursive;
 }
 label{
   font-family: 'Oxanium', cursive;
