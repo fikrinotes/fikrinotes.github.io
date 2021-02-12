@@ -1,0 +1,84 @@
+hr{
+  border-color:#0971DF;
+  height:3px;
+}
+.logososmed{
+  display: flex;
+  justify-content: center;
+}
+.item{
+  padding-top: 10px;
+}
+.fikrinotes{
+  font-family: 'bebas neue',cursive;
+  text-align: center;
+  font-size: 3em;
+  color:white;
+  padding:30px;
+  text-decoration: none;
+}
+body{
+  background-image:url('bghelpform.jpg');
+  background-repeat:repeat-x;
+  background-position:50px -600px;
+}
+.contact{
+  font-family: 'Federant', cursive;
+}
+label{
+  font-family: 'Oxanium', cursive;
+  font-weight: bold;
+}
+.sosmed{
+  font-family: 'Oxanium', cursive;
+  font-size: 1.5em;
+}
+@media (max-width:599px) {
+  .kartu {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    width:325px;
+    height: auto;
+    position: relative;
+    top:-60px;
+    padding:15px;
+    text-align: center;
+    margin: 6rem auto 8.1rem auto;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  }
+  .copyright {
+    text-align: center;
+    color: white;
+    padding: 50px;
+  }
+}
+@media (min-width:600px) {
+  .kartu {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    width: auto;
+    height: auto;
+    position: relative;
+    top:-60px;
+    padding: 15px;
+    text-align: center;
+    margin: 6rem auto 8.1rem auto;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  }
+  .copyright {
+    text-align: center;
+    color: white;
+    padding-left: 150px;
+  }
+}
+.footer {
+  background: #4E5054;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.link {
+  color: white;
+}
