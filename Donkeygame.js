@@ -53,7 +53,7 @@ function play(){
    var time = setInterval(move,b);
    var waktu = setInterval(trans,60);
    var levelUp = setInterval(level,5000)
-   var audio = new Audio('Super_Mario_Bros_-_Overworld_Theme_by_BlueSCD.mp3');
+   var audio = new Audio('Game.Music(1).mp3');
    audio.loop=true;
    audio.play();
 }
