@@ -79,7 +79,7 @@ img a{
   transform: scaleX(0);
 }
 .footer{
-  background:#4E5054;
+  background:#212529;
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
