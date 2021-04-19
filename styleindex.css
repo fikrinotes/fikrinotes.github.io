@@ -1,7 +1,48 @@
+.webpage{
+  padding-left:8px;
+  padding-top: 12px;
+}
+.gambarlogo{
+  width: 150px;
+}
+.logo{
+  display:flex;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5em;
+  margin-right: 8px;
+}
+nav{
+  box-shadow: 0px 7px 5px #909090;
+}
+.carousel-item{
+  height: 250px;
+}
+.overlay-image{
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  left: 0px;
+  right:0px;
+  top: 0px;
+  bottom: 0px;
+  -webkit-filter:brightness(75%);
+}
+.footer{
+  background:#4E5054;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top:20px;
+}
+.link{
+  color: white;
+}
+
+
 .background-timeline{
   background:#4E5054;
   padding:15px;
-  margin-top:50px;
+  margin-top:0px;
   margin-bottom:0px;
 }
 
@@ -58,6 +99,23 @@ h4{
     border-width: 13px;
     position: absolute;
     left: 27px;
+  }
+  .carousel-item {
+    height: 275px;
+  }
+  .cover{
+    position: absolute;
+    color:white;
+    left:15px;
+    bottom:33px;
+  }
+  .carbtn{
+    display: none;
+  }
+  .copyright {
+    text-align: center;
+    color: white;
+    padding:50px;
   }
 }
 @media (min-width:600px) {
@@ -136,6 +194,25 @@ h4{
     position: absolute;
     left:-143px;
   }
+  .carousel-item{
+    height: 32rem;
+  }
+  .cover{
+    position: absolute;
+    color:white;
+    left: 70px;
+    bottom:50px;
+    position: center;
+    font-size: 2em
+  }
+  .copyright {
+    text-align: center;
+    color: white;
+    padding:150px;
+  }
+  h5{
+    font-size:2.5em;
+  }
 }
 
 
@@ -207,12 +284,7 @@ body {
   padding:10px;
 }
 
-#copyright{
-  background:-webkit-linear-gradient(bottom,#080809,#4E5054);
-  padding:10px;
-  color:#D49513;
-  font-family: 'Oxanium', cursive;
-}
+
 
 #menu{
   background:-webkit-linear-gradient(bottom,#080809,#4E5054);
