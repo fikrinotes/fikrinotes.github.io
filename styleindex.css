@@ -210,7 +210,7 @@ h4{
     color: white;
     padding:150px;
   }
-  h5{
+  .cover h5{
     font-size:2.5em;
   }
 }
