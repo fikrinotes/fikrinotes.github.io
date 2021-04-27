@@ -78,7 +78,7 @@
   background-size:cover;
   padding-bottom: 100px;
 }
-  button {
+  button.submit {
     margin: 0.5em;
     border-radius: 22px;
     border: 1px solid #0971DF;
@@ -166,7 +166,7 @@
   background-size:cover;
   padding-bottom: 100px;
 }
-  button {
+  button.submit {
     margin: 0.5em;
     border-radius: 22px;
     border: 1px solid #0971DF;
