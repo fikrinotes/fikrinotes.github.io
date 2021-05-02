@@ -177,7 +177,7 @@
     background: -webkit-linear-gradient(left,#2E3192,#1BFFFF,#2E3192);
     color: white;
     cursor: pointer;
-    backgroun-size:100px;
+    background-size:100px;
     transition: 0.8s;
   }
   input.masukan {
