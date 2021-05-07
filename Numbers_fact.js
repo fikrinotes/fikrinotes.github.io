@@ -41,3 +41,15 @@ function custom() {
 }
 
 
+
+
+//button1.addEventListener('click', function(name){
+//fetch('http://numbersapi.com/random')
+//.then(response => response.json())
+//.then((data) => {
+//  alert("hello world");
+
+//})
+
+//.catch(err => alert("error!"))
+//})
