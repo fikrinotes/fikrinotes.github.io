@@ -20,10 +20,10 @@ fetch('https://random-math-quote-api.herokuapp.com')
 
 function random() {
   result1.innerHTML = 'Loading...';
-  fetch('http://numbersapi.com/random')
-  .then(response => response.text())
-  .then(data => {
-    result1.innerHTML=data;
+  fetch('http://numbersapi.com/random/?json')
+  .then(response =>response.json())
+  .then(data=> {
+    result1.innerHTML=data['text'];
     
   });
 }
@@ -32,17 +32,17 @@ function custom() {
   var type = document.querySelector('.form-select').value;
   var input = document.querySelector('.input').value;
   var num =input.toString()
-  var url = 'http://numbersapi.com/'+num+'/'+type;
+  var url = 'http://numbersapi.com/'+num+'/'+type+"/?json";
   if (isNaN(input)) {
     alert('fill in this form only with numbers');
   }
   else {
     fetch(url)
-      .then((response) => response.text())
-      .then((data) => {
-        result2.innerHTML = data;
-    
-      });
+        .then(response => response.json())
+        .then(data => {
+          result2.innerHTML = data['text'];
+      
+        });
   }
   
 }
