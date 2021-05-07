@@ -12,7 +12,6 @@ var result1= document.querySelector('.result-1')
 var result2= document.querySelector('.result-2')
 
 function random() {
-  result1.innerHTML = 'Loading';
   fetch('http://numbersapi.com/random')
   .then((response) =>response.text())
   .then((data)=> {
@@ -21,7 +20,6 @@ function random() {
   });
 }
 function custom() {
-  result2.innerHTML = 'Loading...';
   var type = document.querySelector('.form-select').value;
   var input = document.querySelector('.input').value;
   var num =input.toString()
