@@ -19,10 +19,10 @@ fetch('https://random-math-quote-api.herokuapp.com')
 
 
 function random() {
-  //result1.innerHTML = 'Loading...';
+  result1.innerHTML = 'Loading...';
   fetch('http://numbersapi.com/random')
-  .then((response) => response.text())
-  .then((data)=> {
+  .then(response => response.text())
+  .then(data => {
     result1.innerHTML=data;
     
   });
