@@ -7,6 +7,6 @@ function random() {
   .then(response => response.json())
   .then(data => {
   alert("hello world") ;
-  alert(data['author']);
+  result1.innerHTML = data['text'];
 })
 }
