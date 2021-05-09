@@ -1,2 +1,2 @@
-# <a href="https://fikrimulyanasetiawan.github.io">
-Visit fikrimulyanasetiawan.github.io</a>
+# <a href="https://fikrinotes.github.io">
+Visit fikrinotes.github.io</a>
