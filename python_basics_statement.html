@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+  <html>
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9QDCNTY1F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-T9QDCNTY1F');
+    </script>
+    <link rel="icon" href="logo_fix.png" height=250px>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lesson 1 : statement dasar pada bahasa pemrograman Python</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="python_basics_statement.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <div class="logo"><img src="fikri_notes.png" alt="logo" width="70" />
+          <div class="webpage">FIKRI NOTES</div>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Physics_menu.html">Fisika</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Math-menu.html">Matematika</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="computerscience.html">Computer Science</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Javascriptproject-menu.html">Javascript Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="HearingMusic.html">Hear Music</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Get_help.html">Help!</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="My_album.html">My Album</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Contact-me.html">Contact Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="TermOfUse.html">Terms of Use</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Quick link
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="ChatBot.html">ChatBot</a> </li>
+              <li><a class="dropdown-item" href="Donkeygame.html">Donkey.js Game</a> </li>
+              <li></li><a class="dropdown-item" href="Calculator.html">Calculator</a>
+          </li>
+          <li><a class="dropdown-item" href="CaesarCipher.html">Caesar Cipher</a></li>
+          <li><a class="dropdown-item" href="BMI_calculator.html">BMI Calculator</a></li>
+          <li><a class="dropdown-item" href="Math_solver.html">Math Solver</a></li>
+          <li><a class="dropdown-item" href="Stopwatch.html">Stopwatch</a></li>
+          <li><a class="dropdown-item" href="Guess_number_game.html">Guess-Number Game</a></li>
+          <li><a class="dropdown-item" href="https://fikrimulyana.github.io/">My Previous Website</a></li>
+        </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="judul">Statement dasar pada bahasa pemrograman Python</div>
+  <div class="rincian">
+    <small>oleh : Fikri Mulyana Setiawan</small>
+    <small>26 mei 2021</small>
+  </div>
+  <hr />
+  <p class="gambar"><img src="https://source.unsplash.com/Fi-GJaLRGKc/1800x900" alt="image" /></p>
+  <p>Di dunia ini ada banyak sekali bahasa pemrograman, seperti Javascript, swift, kotlin, C, C++, Go Lang, Python, Java, Ruby, Rust, Lua, dan masih banyak lagi (<i>untungnya, kamu tidak perlu ingat semuanya</i>). Nah, dari semua bahasa tersebut, ada 1 bahasa pemrograman yang saya (dan mungkin juga orang lain) sangat sukai, yaitu bahasa pemrograman Python. Bahasa ini begitu populer karena penulisan kode nya yang sangat sederhana dan multifungsi, bisa dipakai untuk mengembangkan game,website, artificial intelligence, dan sebagainya.Karena alasan itulah sekarang kita membahas bahasa Python.
+  </p>
+  <p class="gambar"><img src="popularProgramming.jpeg" alt="img" /></p>
+  <p>Sebelum kita berbicara tentang pemrograman, kita harus tau dimanakah tempat kita menulis kode program nantinya. sebagian besar orang lebi suka menulis kode peogramnya di sebuah IDE (Integrated Developing Enviroment / lingkungan pengembangan terintegrasi). Untuk sekarang, kita akan memanfaatkan layanan IDE dari <a href="https://replit.com/~">replit</a>. untuk bisa memakai IDE ini (dan memakainya di website saya ini), kita harus log in ke website replit terlebih dahulu. setelah itu, silakan lanjut ke pembahasan di bawah.</p>
+  <br />
+  <h3>Perintah untuk menampilkan sesuatu ke layar</h3>
+  <p>
+    Pada bahasa pemrograman python, perintah yang dipakai untuk melakukan hal ini adalah perintah <code class="language-python">print()</code>. jika kita ingin menampilkan string ( bisa dianggap sebagai frasa/kalimat), tambahkan tanda kutip di dalam tanda kurung dan tulis kata/frasa/kalimat yang ingin anda tampilkan di dalam tanda kutip. silakan dicoba pada IDE dibawah
+  </p>
+  
+  <iframe frameborder="3" width="100%" height="500px" src="https://replit.com/@fikrimulyana/FikriNotesPythonInterpreter?lite=true"></iframe>
+  <br />
+  <br />
+  <h3>Perintah untuk memasukkan input</h3>
+  <p>untuk mendapatkan data input dari user, kita menggunakan perintah <code class="lang-py">input()</code>. Di dalam tanda kutip bisa kita isi dengan suatu string untuk memberikan keterangan kepada user tentang data apa yang harus dimasukkan. dan <i>Voila</i>, anda berhasil membuat program untuk meminta input data dari user. tapi masalahnya, data tersebut belum disimpan. untuk menyimpan data yang dimasukkan user, kita harus menyimpannya ke dalam sebuah variabel. misalkan kita ingin menyimpannya ke dalam sebuah variabel yang dinamai <code class="lang-py">data</code>. maka, cara untuk menyimpan data tadi ke dalam variabel <code class="lang-py">data</code> yaitu dengan cara sebagai berikut <pre><code class="lang-py">data = input('masukkan data ke sini')</code></pre></p>
+  <p>Maksud dari kode di atas adalah : "Kita membuat sebuah variabel bernama <code class="lang-py">data</code>. kemudian kita meminta input kepada user dengan fungsi <code class="lang-py">input('masukkan data ke sini')</code>. Lalu, tanda "=" berarti sama dengan perintah 'simpan nilai data dari <code class="lang-py">input('masukkan data ke sini')</code> ke variabel <code class="lang-py">data</code>' ". Dengan begitu, ketika user memasukkan data dan menekan enter, data tadi disimpan ke variabel <code class="lang-py">data</code>.</p>
+  <br />
+  <h3>Loop : While Loop dan if-else statement</h3>
+  <p>While Loop bisa diartikan sebagai perintah yang akan dijalankan selama suatu syarat masih terpenuhi. contoh sederhananya seperti saat kita makan . bagaimana proses kita makan sampai kenyang? tentu kita menyuap makanan, lalu jika belum kenyang, kita akan terus makan. jadi proses memakan makanan akan terus kita lakukan selama kita belum kenyang sampai terpenuhi suatu syarat,yaitu "kita kenyang". dengan begitu, secara sederhana kita bisa tulis bahwa while kita belum kenyang, kita terus memakan makan,proses tersebut terus berulang sampai kita kenyang. kita menyebutnya "Loop" karena prosesnya terus berulang selama syarat masih dipenuhi. dalam bahasa python, proses ini dapat dilakukan dengan sytax berikut: </p>
+  <pre><code class="language-python">while [syarat] :
+      #tulis kode disini</code></pre>
+   <p>misal, kita buat sebuah variabel bernama x, dan kita tetapkan nilainya sama dengan 1. kemudian kita akan membuat program ini terus menampilkan hasil "halo" selama nilai x lebih kecil dari 4. nah, kalimat "nilai x lebih kecil dari 4" adalah syarat yang harus dipenuhi agar program ini terus menampikan kata halo. tugas tersebut bisa kita lakukan dengan kode berikut:</p>
+  <pre>
+    <code class="lang-py">
+      n=1
+      while n<4 :
+         print('halo')
+         n=n+1
+    </code>
+  </pre>
+  <p>
+    mungkin anda melihat ada yang aneh pada kode di atas, yaitu pada bagian n=n+1. Tidak, itu bukanlah kesalahan. pernyataan n=n+1 memang salah secara aljabar, tapi tanda "=" disini artinya bukanlah "sama dengan", melainkan artinya adalah nilai n yang sekarang (nilai n ter-update) adalah nilai n yang lama ditambah 1. jadi jika n lama =1, maka n baru=2. nah, sekarang kita lanjut ke kode tadi. jadi pada kode tadi saya membuat variabel bernama 'n' yang saya beri nilai 1. lalu saya mulai buat while loop, dengan syarat n kecil dari 4. ketika n kecil dari 4, maka perintah dibawah while loop akan dilaksanakan. perintah dibawah while loop adalah perintah untuk menampilkan kata 'halo' dan mengubah nilai n yang awalnya 1 menjadi 2. jadi setelah kata 'halo' ditampilkan, nilai n sekarang berubah menjadi 2. lalu karena n=2 yang berarti n masih lebih kecil daripada 4, maka perintah dibawah while loop dilaksanakan lagi dan nilai n dirubah lagi dari 2 menjadi 3. hal tersebut akan terus terjadi selama n lebih kecil daripada 4. lalu apa output dari program ini? silakan anda coba saja sendiri. ketik kembali kode saya di atas pada IDE di bawah ini untuk melihat hasilnya.
+  </p>
+  <iframe frameborder="3" width="100%" height="500px" src="https://replit.com/@fikrimulyana/Null?lite=true"></iframe>
+  
+  <p>
+    kemudian, kita lanjut ke if-else statement. sederhananya if statement berfungsi untuk menajalankan perintah dibawahnya jika suatu syarat terpenuhi. mirip seperti while loop. tapi ada perbedaan. pada while loop jika suatu syarat masih terpenuhi, maka perintah dibawahnya dilakukan secara berulang ulang sampai syarat tidak terpenuhi.sedangkan pada if statement, walaupun suatu syarat masih terpenuhi, perintah dibawahnya tidak akan dilakukan berulang-ulang, melainkan hanya 1 kali.kemudian else statement. else statement dilakukan jika semua syarat pada if statement tidak terpenuhi. sebenarnya ada 1 statement lagi yang mirip dengan if-else, yaitu elif. tapi untuk sekarang, spertinya statement tersebut tidak terlalu penting. syntax untuk if-else statement adalah sebagai berikut:
+  </p>
+  <pre>
+    <code class="lang-py">
+      if [syarat] :
+         #kode program
+      else [syarat] :
+         #kode program
+    </code>
+  </pre>
+  <p>
+    Nah, hanya dengan menggunakan semua hal yang saya jelaskan di atas, anda sudah bisa membuat game sederhana. sebagai contoh, saya pernah membuat game batu-gunting-kertas melawan komputer. game ini saya beri nama 'Undefeated Game'. saya sebut Undefeated Game karena saya bisa memastikan bahwa anda tidak akan menang di game ini. game ini terlihat seolah-olah menggunakan teknologi kecerdasan buatan (artificial intelligence), padahal sebenarnya game ini hanya sebatas kode program dengan if-else statement.
+  </p>
+  <iframe frameborder="3" width="100%" height="500px" src="https://replit.com/@fikrimulyana/UndefeatedGame?lite=true"></iframe>
+  
+  <hr />
+  <p class="copyright">&copy; Fikri Mulyana Setiawan</p>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.min.js">
+  
+  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-core.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+
+</html>
