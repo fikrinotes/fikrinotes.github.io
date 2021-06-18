@@ -1,0 +1,204 @@
+
+.logo {
+  display: flex;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5em;
+  margin-right: 8px;
+}
+.webpage{
+  padding-left:8px;
+  padding-top: 12px;
+}
+
+.mainwebpage{
+  font-family: 'Bebas Neue', cursive;
+  font-size:27px;
+  text-align: center;
+}
+p{
+  margin-top: 25px;
+  padding-left:20px;
+  padding-right:20px;
+  text-indent:20px;
+}
+/*#first-tab{
+  font-weight: bold;
+  font-family: 'Gruppo', cursive;
+  text-decoration:none;
+}
+#second-tab{
+  font-weight: bold;
+  font-family: 'Gruppo', cursive;
+  text-decoration:none;
+}
+#third-tab{
+  font-weight: bold;
+  font-family: 'Gruppo', cursive;
+  text-decoration:none;
+}*/
+.label1{
+  color: #E4B31A;
+  font-size: 1.5em;
+  font-family: 'Gafata', sans-serif;
+}
+.label2{
+  color:#16CC42;
+  font-size: 1.5em;
+  font-family: 'Gafata', sans-serif;
+}
+.label-k{
+  color:#232136;
+  font-size: 1.5em;
+  font-family: 'Gafata', sans-serif;
+}
+
+.nav-pills{
+  background: white;
+  border-radius:8px;
+}
+.hasil{
+  color:white;
+  font-size: 1.5em;
+  font-family: 'Gafata', sans-serif;
+}
+.header1{
+  font-size: 2.5em;
+  font-family: 'Charmonman', cursive;
+  color: #4c8bf5;
+  text-align: center;
+}
+.header2 {
+  font-size: 2.5em;
+  font-family: 'Charmonman', cursive;
+  color: #4c8bf5;
+  text-align: center;
+}
+.header3{
+  font-size: 2.5em;
+  font-family: 'Charmonman', cursive;
+  color: #232136;
+  text-align: center;
+}
+
+.tombol1 {
+  border-radius: 8px;
+  width: 280px;
+  height: 50px;
+  outline: none;
+  border:none;
+  background:  #4c8bf5;
+  color:  white;
+  box-shadow: inset 0 0 0 0 #E4B31A;
+  transition: ease-out 0.3s;
+}
+
+.tombol1:hover {
+  box-shadow: inset 280px 0 0 0 #E4B31A;
+  color: black;
+}
+.wave{
+  background: #4c8bf5;
+}
+.tombol2 {
+  border-radius: 8px;
+  width: 280px;
+  height: 50px;
+  outline: none;
+  border:none;
+  background:  #4c8bf5;
+  color:  white;
+  box-shadow: inset 0 0 0 0 #16CC42;
+  transition: ease-out 0.3s;
+}
+
+.tombol2:hover {
+  box-shadow: inset 280px 0 0 0 #16CC42;
+  color: black;
+}
+.tombol3 {
+  border-radius: 8px;
+  width: 280px;
+  height: 50px;
+  outline: none;
+  border:none;
+  background:  #232136;
+  color:  white;
+  box-shadow: inset 0 0 0 0 #D9302C;
+  transition: ease-out 0.3s;
+}
+
+.tombol3:hover {
+  box-shadow: inset 280px 0 0 0 #D9302C;
+  color: black;
+}
+.tombol{
+  font-size: 1.2em;
+  font-family: 'Orbitron', sans-serif;
+}
+.footer{
+  background:#4E5054;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  /*margin-top:20px;*/
+}
+.link{
+  color: white;
+}
+@media (max-width:599px) {
+  .formulir-linear{
+    padding:10px;
+    background:#232136;
+  }
+  .formulir-kuadrat{
+    padding:10px;
+    background:#4c8bf5;
+  }
+  .formulir1{
+    padding:20px;
+    margin: 0 auto;
+  }
+  .formulir2{
+    padding:20px;
+  }
+  .formulir3{
+    padding:20px;
+  }
+  .copyright {
+    text-align: center;
+    color: white;
+    padding: 50px;
+  }
+}
+
+@media (min-width:600px) {
+  .formulir-linear{
+    padding-left:250px;
+    padding-right:250px;
+    padding-bottom: 50px;
+    background:#232136;
+  }
+  .formulir-kuadrat{
+    padding-left:250px;
+    padding-right:250px;
+    padding-bottom: 50px;
+    background:#4c8bf5;
+  }
+  .copyright {
+    text-align: center;
+    margin-left: 150px;
+    color: white;
+  }
+}
+.quotes {
+  text-align: center;
+}
+.quote {
+  padding: 20px;
+  font-size: 2em;
+  font-family: 'Kaushan Script', cursive;
+}
+.author {
+  font-size: 1.5em;
+  font-family: 'Gafata', sans-serif;
+}
