@@ -120,6 +120,9 @@ function move() {
     life = 0;
     health.style.width = life + "%";
     health.innerHTML = "Your Health : " + life + "%";
+    ufo.style.display = "none";
+    spaceship.style.display = "none";
+    $('#losebycollision').modal('show');
   }
   if (poss[1] < posu[1]+45 && poss[1] > posu[1] && poss[0] < posu[0]+50 && poss[0] > posu[0]) {
     //langsung habis semua nyawa
