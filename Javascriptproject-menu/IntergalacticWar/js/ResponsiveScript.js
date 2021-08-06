@@ -124,6 +124,7 @@ function move() {
   if (poss[1] < posu[1]+45 && poss[1] > posu[1] && poss[0] < posu[0]+50 && poss[0] > posu[0]) {
     //langsung habis semua nyawa
     //anda kalah karena menabrak musuh
+    crash.play();
     clearInterval(umove);
     life = 0;
     health.style.width = life + "%";
