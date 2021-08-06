@@ -1,0 +1,109 @@
+.canvas {
+  width: auto;
+  margin:10px;
+  height: 400px;
+  background-color: #04194f;
+}
+h1 {
+  font-family: 'Zen Dots', cursive;
+  height: 40px;
+}
+.spaceship {
+  position: absolute;
+  top: 400px;
+  left: 140px;
+}
+.ufo {
+  position: absolute;
+  top: 50px;
+  left: 140px;
+}
+.bullet_template {
+  position: absolute;
+}
+.projectile_template {
+  position: absolute;
+}
+.progress {
+  margin-left : 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom : 10px;
+}
+.button-primary {
+  width: 70px;
+}
+.score {
+  text-align: center;
+  font-family: 'VT323', monospace;
+  font-size: 2em;
+}
+.button-control {
+  border-radius : 8px;
+  width: 85px;
+  height: 40px;
+  outline: none;
+  border:none;
+  background:  #04194f;
+  color:  white;
+  margin: 10px;
+}
+.controller {
+  padding : 8px;
+}
+.play {
+  background: #ffffff00;
+  position: absolute;
+  outline: none;
+  border: none;
+}
+.about-title {
+  font-size: 2em;
+  font-family: 'Coda', cursive;
+}
+.about-content {
+  text-align: justify;
+}
+.about {
+  margin: 0px;
+  padding: 30px;
+  color: white;
+}
+.about-section {
+  background-color: #04194f;
+  padding-top:20px;
+  margin-top: 50px;
+}
+a .link {
+  color: #2576f6;
+}
+.little{
+  font-size: 0.8em;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.footer{
+  background:#4E5054;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  /*margin-top:20px;*/
+}
+.link{
+  color: white;
+}
+@media (max-width:599px) {
+  .copyright {
+    text-align: center;
+    color: white;
+    padding: 50px;
+  }
+}
+
+@media (min-width:600px) {
+  .copyright {
+    text-align: center;
+    margin-left: 150px;
+    color: white;
+  }
+}
