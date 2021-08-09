@@ -1,0 +1,1 @@
+Ini file random
