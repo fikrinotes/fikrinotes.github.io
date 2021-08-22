@@ -1,10 +1,12 @@
 function hitung(){
+    var print=document.getElementById('hasil');
     var bb=Number(document.getElementById('bb').value);
     var tb=Number(document.getElementById('tb').value);
     if (tb>5) {
       alert ("maaf, tinggi badan kamu harus dalam satuan meter. apa kamu yakin tinggi badan-mu " + tb + "meter? tinggi sekali 😦😧😮")
       bb=0;
       tb=0;
+      print.innerHTML="";
     }
     var num=tb*tb;
     var bmi=bb/num;
