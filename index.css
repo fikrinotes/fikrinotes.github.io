@@ -130,7 +130,7 @@ h4{
     border-radius: 50%;
     border: 4px solid #FFFFFF;
     position: absolute;
-    left: 460px;
+    left: 230px;
   }
   
   h4:before {
@@ -155,7 +155,7 @@ h4{
   
    .time:nth-child(odd) {
      position: relative;
-     left:560px;
+     left:270px;
    }
   .timeline .time:nth-child(even):before{
     content: "";
@@ -166,7 +166,7 @@ h4{
     border-radius: 50%;
     border: 4px solid #FFFFFF;
     position: absolute;
-    left:460px;
+    left:230px;
   }
   .timeline .time:nth-child(odd):before{
     content: "";
@@ -177,7 +177,7 @@ h4{
     border-radius: 50%;
     border: 4px solid #FFFFFF;
     position: absolute;
-    left:-143px;
+    left:-72px;
   }
   .carousel-item{
     height: 32rem;
