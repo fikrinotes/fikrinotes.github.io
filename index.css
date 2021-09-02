@@ -102,7 +102,7 @@ h4{
 }
 @media (min-width:600px) {
   #slide{
-  height:380px;
+  height:auto;
   width:auto;
   }
   .programmingJourney{
@@ -163,9 +163,6 @@ h4{
     text-align: center;
     color: white;
     padding:150px;
-  }
-  .cover h5{
-    font-size:2.5em;
   }
 }
 
