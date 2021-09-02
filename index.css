@@ -92,10 +92,7 @@ h4{
     left: 27px;
   }
   .carousel-item {
-    height: 275px;
-  }
-  .carbtn{
-    display: none;
+    height: auto;
   }
   .copyright {
     text-align: center;
