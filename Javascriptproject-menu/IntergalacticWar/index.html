@@ -72,6 +72,7 @@
 	</div>
 	<audio src="Sound_effect/gunshots.mp3" id="gunshot"></audio>
 	<audio src="Sound_effect/crash.mp3" id="crash"></audio> 
+
 	<!-- Modal -->
 	<div class="modal fade" id="losebybullet" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
@@ -111,36 +112,15 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="staticBackdropLabel">About Intergalactic War and it's play rule</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p class="about-title">The Game's Rules</p>
 
-<p class="about-content">The UFO will move randomly from left to right to shoot you.  your job is to dodge fire from UFOs and shoot UFOs back with unlimited bullets you have.  Every time you shoot a UFO, your score will increase by 1 point.  every time your score reaches multiples of 5 (5,10,15,20,..), the movement of the bullets from the UFO will be faster and increase the possibility for you to lose.  Your life will be reduced by 25% every time you are shot by a UFO.  However, if you get too close to the UFO, you will immediately lose.</p> 
 
-<p class="about-title">How To Play?</p>
-<p class="about-content">Controlling using keyboard is not working properly right now. but if you still want to try it, use arrow keys for moving and spacebar for shooting. if you are using a smartphone, you can only control the spaceship using the buttons I have given on this web page.</p>
-<center><img width="300px" src="Images/example-image.png" alt="image-button" /></center>
-<div class="little">Control Button for Spaceship</div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" onclick="play()" class="btn btn-primary" data-bs-dismiss="modal">Understood, Let's Play</button>
-      </div>
-    </div>
-  </div>
-</div>
 <div class="about-section">
 <div class="about">
 <p class="about-title">About Intergalactic War </p> <hr />
 <p class="about-content">Intergalactic war is a game with the concept of war between humans and extraterrestrials.  This game tells the fate of humans if extraterrestrials really exist and we fight against them.  This game was created by Fikri Mulyana Setiawan, a Programmer and Science Enthusiast.  This game is inspired by Elon Musk's game called "blastar".</p> 
 <p class="about-title">The Game's Rules</p>
 <p class="about-content">The UFO will move randomly from left to right to shoot you.  your job is to dodge fire from UFOs and shoot UFOs back with unlimited bullets you have.  Every time you shoot a UFO, your score will increase by 1 point.  every time your score reaches multiples of 5 (5,10,15,20,..), the movement of the bullets from the UFO will be faster and increase the possibility for you to lose.  Your life will be reduced by 25% every time you are shot by a UFO.  However, if you get too close to the UFO, you will immediately lose.</p> 
-<p class="about-title">How To Play?</p>
+<p class="about-title" id="guide">How To Play?</p>
 <p class="about-content">Controlling using keyboard is not working properly right now. but if you still want to try it, use arrow keys for moving and spacebar for shooting. if you are using a smartphone, you can only control the spaceship using the buttons I have given on this web page.</p>
 <center><img width="300px" src="Images/example-image.png" alt="image-button" /></center>
 <div class="little">Control Button for Spaceship</div>
@@ -156,7 +136,7 @@
 <div>• Bullets Icons made by <a class="text-decoration-none" href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" class="text-decoration-none" title="Flaticon">www.flaticon.com</a></div>
 </div>
 </div>
-	<button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="play"><img src="Images/play-button.png" height="100px" alt="button-play" /></button>
+	<button type="button" onclick="play()" class="play"><img src="Images/play-button.png" height="100px" alt="button-play" /></button>
 <div class="footer">
   <div class="tabel">
     <table border="0">
