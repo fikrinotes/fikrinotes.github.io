@@ -28,7 +28,7 @@ playButton.style.left = w/2-50 + "px";
 playButton.style.top = 180 + "px";
 
 // function for control using keyboard 
-window.addEventListener('keyup', (e) => {
+window.addEventListener('keydown', (e) => {
   switch (e.key) {
     case 'ArrowLeft':
       ss_left();
@@ -56,8 +56,14 @@ ufo.style.top = posu[1] + "px";
 spaceship.style.left = poss[0] + "px";
 // setInterval code 
 function play() {
-  umove= setInterval(move, 10); 
-  playButton.style.display = "none";
+  var response = confirm("Before starting the game, you should read the game instructions first.  Click 'ok' if you have read the instructions.  if you haven't read the instructions, click 'cancel'")
+  if (response) {
+     umove= setInterval(move, 10);
+     playButton.style.display = "none";
+  }
+  else {
+    window.location = "#guide"
+  }
 }
 //function for firing a bullet
 
