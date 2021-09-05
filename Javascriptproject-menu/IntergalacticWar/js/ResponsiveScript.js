@@ -29,8 +29,8 @@ playButton.style.top = 180 + "px";
 
 // function for control using keyboard 
 window.addEventListener('keydown', (e) => {
+  e.preventDefault();
   switch (e.key) {
-    e.preventDefault();
     case 'ArrowLeft':
       ss_left();
       break;
