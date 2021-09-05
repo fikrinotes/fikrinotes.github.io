@@ -56,7 +56,7 @@ ufo.style.top = posu[1] + "px";
 spaceship.style.left = poss[0] + "px";
 // setInterval code 
 function play() {
-  var response = confirm("Before starting the game, you should read the game instructions first.  Click 'ok' if you have read the instructions.  if you haven't read the instructions, click 'cancel'")
+  var response = confirm("Before starting the game, you should read the game instructions first.  Click 'ok' if you have read the instructions.  if you haven't read the instructions, click 'cancel', and please read the instructions above this game")
   if (response) {
      umove= setInterval(move, 10);
      playButton.style.display = "none";
