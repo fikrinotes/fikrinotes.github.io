@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/aae2a6ee-380e-4d2d-8f90-e34750b94901/deploy-status)](https://app.netlify.com/sites/fikrinotes/deploys)
+
 # Introduction 
 Hi, my name is Fikri Mulyana Setiawan, *a science enthusiast*. If you go to this repository, that's mean that know me (come on, there's no way you'll find my repository all of a sudden). You are free to view and learn the codes stored in this repository.
 ## Contacts
