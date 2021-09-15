@@ -20,7 +20,7 @@ hr{
 body{
   background-image:url('backgroundforcontact.jpeg');
   background-repeat:repeat-x;
-  background-position:0px -300px;
+  background-position:0px -360px;
 }
 .contact{
   font-family: 'Federant', cursive;
@@ -40,7 +40,7 @@ label{
     width:325px;
     height: auto;
     position: relative;
-    top:-60px;
+    top:80px;
     padding:15px;
     text-align: center;
     margin: 6rem auto 8.1rem auto;
