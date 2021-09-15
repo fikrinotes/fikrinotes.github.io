@@ -65,11 +65,11 @@ label{
   .kartu {
     background-color: #FFFFFF;
     border-radius: 8px;
-    width: 680px;
+    width: 750px;
     height: auto;
     position: relative;
     top:-60px;
-    padding: 15px;
+    padding: 30px;
     text-align: center;
     margin: 6rem auto 8.1rem auto;
     box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
