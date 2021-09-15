@@ -65,7 +65,7 @@ label{
   .kartu {
     background-color: #FFFFFF;
     border-radius: 8px;
-    width: calc(auto-100px);
+    width: 500px;
     height: auto;
     position: relative;
     top:-60px;
