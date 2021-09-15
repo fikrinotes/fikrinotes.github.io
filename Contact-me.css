@@ -38,6 +38,9 @@ label{
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
+} 
+.link{
+  color: white;
 }
 @media (max-width:599px) {
   .kartu {
