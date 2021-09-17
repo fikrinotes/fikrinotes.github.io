@@ -244,6 +244,11 @@ body {
   #fotoprofil {
     height: 400px;
   }
+  .copyright {
+    text-align: center;
+    margin-left: 150px;
+    color: white;
+  }
 }
 
 
