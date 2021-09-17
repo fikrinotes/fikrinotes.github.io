@@ -1,3 +1,10 @@
+.ikon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
 .webpage{
   padding-left:8px;
   padding-top: 12px;
