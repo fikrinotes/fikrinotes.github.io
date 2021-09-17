@@ -249,7 +249,7 @@ body {
 }
 @media (min-width:605px) {
   #fotoprofil {
-    height: 400px;
+    height: 300px;
   }
   .copyright {
     text-align: center;
