@@ -163,7 +163,7 @@
   padding: 2rem 5%;
   position: relative;
   height: 600px;
-  background-image: url("bg-weather1.jpg"); /* If our image is bright, we can tone it down with this darker overlay */
+  background-image: url("https://source.unsplash.com/412x846/?view"); /* If our image is bright, we can tone it down with this darker overlay */
   background-size:cover;
   padding-bottom: 100px;
 }
