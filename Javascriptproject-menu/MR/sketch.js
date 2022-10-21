@@ -34,6 +34,6 @@ const camera = new Camera(videoElement, {
     await hands.send({image: videoElement});
   },
   width: 1280,
-  height: 720
+  height: 720, exact : "environtment"
 });
 camera.start();
