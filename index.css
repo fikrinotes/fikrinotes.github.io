@@ -4,6 +4,7 @@
 }
 .keterangan {
   text-indent: 30px;
+  width : 100px;
 }
 .ikon {
   display: flex;
