@@ -1,8 +1,5 @@
 .capt {
-  margin-left: auto;
-  margin-right: auto;
   text-align:center;
-  width : 400px;
   
 }
 .keterangan {
@@ -68,6 +65,12 @@ h4{
 
 
 @media (max-width:599px) {
+  .capt {
+    
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
   #slide{
   height:auto;
   width:auto;
@@ -119,6 +122,12 @@ h4{
   }
 }
 @media (min-width:600px) {
+  .capt {
+    width : 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
   #slide{
   height:auto;
   width:auto;
