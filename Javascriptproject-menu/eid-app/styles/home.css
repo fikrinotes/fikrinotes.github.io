@@ -1,0 +1,143 @@
+:root {
+    --brown-first: #865b29;
+    --brown-second:#694720;
+    --white: rgb(201, 201, 201);
+    --gold: #edc420;
+}
+
+#heading {
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input {
+    display: block;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    outline: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.fa {
+    margin-right: 5px;
+    font-size: 1.2em;
+}
+
+
+@media (min-width: 1024px) {
+    body {
+        background-image: url("/assets/home-background.jpg");
+        background-size: cover;
+        height: 100vh;
+    }
+
+    #heading {
+        color: whitesmoke;
+        font-size: 2em;
+        text-align: center;
+        padding-top: 100px;
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #formulir {
+        padding-top: 50px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    label {
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        color: whitesmoke;
+        font-size: 1.3em;
+    }
+
+    button {
+        margin: 0;
+        margin-top: 20px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 3em;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--gold);
+        color: whitesmoke;
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 1.1em;
+        padding: 0;
+    }
+
+    input {
+        height: 3em;
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        background-image: url("/assets/home-background-phone-2.jpg");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #heading {
+        font-size: 1.6em;
+        color: var(--brown-first);
+        text-align: center;
+        padding-top: 120px;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #formulir {
+        padding-top: 30px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    label {
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        color: var(--brown-first);
+    }
+
+    button {
+        margin-top: 20px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 3em;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--brown-first);
+        color: whitesmoke;
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 1.1em;
+    }
+
+    input {
+        height: 2.5em;
+    }
+}
+
