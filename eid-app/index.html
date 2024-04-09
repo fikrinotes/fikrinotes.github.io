@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles/home.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Crypto JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div id="heading">Ucapkan Selamat Lebaran kepada Keluarga, Kerabat, dan Teman Anda!</div>
+
+    <form action="" id="formulir">
+        <label for="nama">Nama Penerima </label>
+        <input type="text" id="nama">
+
+        <label for="pesan">Pesan (Opsional) </label>
+        <input type="text" id="pesan">
+
+        <button type="button" onclick="push_button()"> <span id="loading" class=""></span> Buat Pesan</button>
+    </form>
+
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
