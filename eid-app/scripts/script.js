@@ -24,6 +24,6 @@ function submit_data() {
     nama = encodeURIComponent(CryptoJS.AES.encrypt(nama, "rahasia"));
     pesan = encodeURIComponent(CryptoJS.AES.encrypt(pesan, "rahasia"));
 
-    location.replace("http://127.0.0.1:5500/response.html?nama=" + nama + "&pesan=" + pesan);
+    location.replace("https://fikrinotes.github.io/eid-app/response.html?nama=" + nama + "&pesan=" + pesan);
 }
 
