@@ -15,7 +15,6 @@ var list_pesan = [
     "Semoga amal ibadah kita diterima Allah SWT dan kita menjadi pribadi yang lebih baik.",
     "Semoga kebahagiaan dan kedamaian selalu hadir di hati dan keluarga kita.",
     "Semoga di hari raya ini, kita dapat menyebarkan cinta dan kasih sayang kepada sesama.",
-    "Taqabbalallahu Minna Wa Minkum, semoga Allah SWT memberikan ampunan atas segala dosa dan kesalahan kita.",
     "Mari kita saling memaafkan dan mempererat tali silaturahmi." 
 ]
 
