@@ -1,6 +1,7 @@
 var keranjang;
 var targets = [];
 var score = 0;
+var max_score = 0;
 var target_speed = 1
 
 var freq = 150 // frekuensi munculnya target dalam frame
@@ -208,6 +209,10 @@ function updateGameArea() {
         }
     }
 
+    if (score > max_score) {
+        max_score = score; // Update max score  
+    }
+
     ctx = myGameArea.context;
     ctx.font = "20px 'Press Start 2P'";
     ctx.fillStyle = "white";
@@ -221,7 +226,7 @@ function updateGameArea() {
         stopGame(); // Stop the game if score is negative
         gameOverSound.play(); // Play game over sound
         myGameArea.clear();
-        document.getElementById("finalScore").innerHTML = "Skor Anda: " + score; // Hide game canvas
+        document.getElementById("finalScore").innerHTML = "Skor tertinggi anda: " + max_score; // Hide game canvas
         document.getElementById("gameOver").style.display = "block"; // Show game over screen
     }
 }
