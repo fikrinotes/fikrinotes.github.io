@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cavill & Roshan Blueprint - Latihan di Rumah</title>
+    <!-- Memuat Tailwind CSS untuk desain responsif dan modern -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Mengatur font Inter -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc;
+            color: #1e293b;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+        .workout-day {
+            min-height: 400px;
+            display: none; /* Disembunyikan secara default */
+        }
+        .active-tab {
+            background-color: #3b82f6 !important;
+            color: white !important;
+            font-weight: 600;
+        }
+        .exercise-card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+            border-radius: 0.75rem;
+        }
+        /* Style untuk progress bar di halaman statistik (opsional) */
+        .progress-bar-bg {
+            background-color: #e5e7eb;
+            border-radius: 9999px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-6">
+
+    <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-2xl p-4 sm:p-6">
+        
+        <!-- JUDUL APLIKASI -->
+        <header class="text-center mb-6">
+            <h1 class="text-3xl font-extrabold text-indigo-700">Cavill & Roshan Blueprint 🚀</h1>
+            <p class="text-sm text-gray-500 mt-1">Panduan Latihan Bodyweight & Nutrisi Harian</p>
+        </header>
+
+        <!-- DASHBOARD RINGKASAN & TIMER -->
+        <div class="mb-8 p-4 bg-blue-50 border-l-4 border-blue-400 rounded-lg">
+            <h2 class="text-xl font-semibold mb-3 text-blue-800">Status Hari Ini</h2>
+            <p id="today-status" class="text-lg font-medium">Memuat...</p>
+            
+            <!-- TIMER MODAL -->
+            <div id="timer-modal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50 hidden">
+                <div class="bg-white p-8 rounded-xl shadow-2xl text-center w-full max-w-sm">
+                    <h3 class="text-2xl font-bold mb-4 text-red-600">Waktu Istirahat!</h3>
+                    <div class="w-24 h-24 mx-auto mb-4 flex items-center justify-center rounded-full bg-red-100 text-red-600 border-4 border-red-600">
+                        <span id="countdown" class="text-4xl font-extrabold">60</span>
+                    </div>
+                    <p class="text-gray-600">Detik tersisa. Bersiaplah untuk set berikutnya!</p>
+                    <button onclick="hideModal()" class="mt-4 bg-gray-500 text-white p-2 rounded-lg w-full">Tutup</button>
+                </div>
+            </div>
+
+            <!-- MODAL PEMBERITAHUAN SELESAI -->
+            <div id="alert-modal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50 hidden">
+                <div class="bg-green-100 border-t-4 border-green-500 rounded-b text-green-900 px-4 py-3 shadow-md w-full max-w-sm" role="alert">
+                    <div class="flex">
+                        <div class="py-1"><svg class="fill-current h-6 w-6 text-green-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
+                        <div>
+                            <p class="font-bold">ISTIRAHAT SELESAI!</p>
+                            <p class="text-sm">Lanjut ke gerakan atau set berikutnya.</p>
+                            <button onclick="hideAlert()" class="mt-2 text-green-600 font-semibold underline">Oke</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB NAVIGASI HARI -->
+        <div class="flex justify-between space-x-1 mb-6 overflow-x-auto pb-2">
+            <button id="tab-senin" class="tab-button flex-shrink-0 bg-gray-200 text-gray-700 py-2 px-3 rounded-lg text-sm transition" onclick="showDay('senin')">Senin</button>
+            <button id="tab-selasa" class="tab-button flex-shrink-0 bg-gray-200 text-gray-700 py-2 px-3 rounded-lg text-sm transition" onclick="showDay('selasa')">Selasa</button>
+            <button id="tab-kamis" class="tab-button flex-shrink-0 bg-gray-200 text-gray-700 py-2 px-3 rounded-lg text-sm transition" onclick="showDay('kamis')">Kamis</button>
+            <button id="tab-jumat" class="tab-button flex-shrink-0 bg-gray-200 text-gray-700 py-2 px-3 rounded-lg text-sm transition" onclick="showDay('jumat')">Jumat</button>
+            <button id="tab-nutrisi" class="tab-button flex-shrink-0 bg-gray-200 text-gray-700 py-2 px-3 rounded-lg text-sm transition" onclick="showDay('nutrisi')">Nutrisi 🥗</button>
+            <button id="tab-progress" class="tab-button flex-shrink-0 bg-gray-200 text-gray-700 py-2 px-3 rounded-lg text-sm transition" onclick="showDay('progress')">Progress 📈</button>
+        </div>
+
+        <!-- 1. HARI SENIN: DADA & TRISEP -->
+        <div id="senin" class="workout-day">
+            <h3 class="text-2xl font-bold mb-4 text-indigo-700">Senin: Dada & Trisep</h3>
+            <p class="text-gray-600 mb-4">Fokus pada dorongan. Lakukan 3 set per gerakan, istirahat 60 detik di antara set.</p>
+            
+            <div id="exercises-senin"></div>
+        </div>
+
+        <!-- 2. HARI SELASA: KAKI & INTI -->
+        <div id="selasa" class="workout-day">
+            <h3 class="text-2xl font-bold mb-4 text-indigo-700">Selasa: Kaki & Inti</h3>
+            <p class="text-gray-600 mb-4">Latihan untuk kekuatan tubuh bawah dan core yang solid.</p>
+            
+            <div id="exercises-selasa"></div>
+        </div>
+
+        <!-- 3. HARI KAMIS: PUNGGUNG & BISEP -->
+        <div id="kamis" class="workout-day">
+            <h3 class="text-2xl font-bold mb-4 text-indigo-700">Kamis: Punggung & Bisep</h3>
+            <p class="text-gray-600 mb-4">Menggunakan gerakan menarik *pulling* (dengan alat rumah tangga) untuk melatih punggung.</p>
+            
+            <div id="exercises-kamis"></div>
+        </div>
+
+        <!-- 4. HARI JUMAT: FULL BODY -->
+        <div id="jumat" class="workout-day">
+            <h3 class="text-2xl font-bold mb-4 text-indigo-700">Jumat: Full Body</h3>
+            <p class="text-gray-600 mb-4">Sirkuit berintensitas tinggi untuk daya tahan dan membakar lemak.</p>
+            
+            <div id="exercises-jumat"></div>
+        </div>
+
+        <!-- 5. LOG NUTRISI -->
+        <div id="nutrisi" class="workout-day">
+            <h3 class="text-2xl font-bold mb-4 text-green-700">Log Nutrisi Harian 🥗</h3>
+            <p class="text-gray-600 mb-6">Disiplin nutrisi adalah 70% dari hasil. Pastikan asupan protein Anda terpenuhi!</p>
+
+            <div id="nutrition-log-container" class="space-y-4"></div>
+        </div>
+
+        <!-- 6. PROGRESS TRACKING BARU -->
+        <div id="progress" class="workout-day">
+            <h3 class="text-2xl font-bold mb-6 text-purple-700">Progress Harian & Statistik 📈</h3>
+
+            <!-- Formulir Pencatatan Progress -->
+            <div class="p-4 bg-purple-50 rounded-lg mb-6 border border-purple-200">
+                <h4 class="text-xl font-semibold mb-3 text-purple-800">Catat Progress Hari Ini:</h4>
+                <div class="space-y-3">
+                    <label class="block">
+                        <span class="text-gray-700">Tanggal:</span>
+                        <input type="date" id="progress-date" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2" required>
+                    </label>
+                    <label class="block">
+                        <span class="text-gray-700">Berat Badan (kg):</span>
+                        <input type="number" id="progress-weight" placeholder="Contoh: 75.5" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2">
+                    </label>
+                    <label class="block">
+                        <span class="text-gray-700">Max Reps Push-up Hari Ini:</span>
+                        <input type="number" id="progress-pushup" placeholder="Contoh: 30" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2">
+                    </label>
+                    <button onclick="logProgress()" class="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg w-full transition duration-150">
+                        Simpan Log Progress
+                    </button>
+                </div>
+            </div>
+
+            <!-- Riwayat Progress -->
+            <h4 class="text-xl font-semibold mb-3 text-gray-800">Riwayat Pencatatan:</h4>
+            <div id="progress-history" class="space-y-2">
+                <!-- Data riwayat akan dimuat di sini -->
+                <p class="text-gray-500" id="no-history-message">Belum ada riwayat tercatat. Mulai catat progress Anda!</p>
+            </div>
+        </div>
+        <!-- AKHIR PROGRESS TRACKING -->
+
+    </div>
+
+    <!-- PENDINGINAN & PENUTUP -->
+    <div class="max-w-2xl mx-auto mt-6 p-4 bg-gray-100 rounded-xl text-center">
+        <p class="text-gray-500 text-sm">Ingat, pemanasan dan pendinginan 5-10 menit wajib dilakukan!</p>
+    </div>
+
+    <script>
+        // Data Latihan dan Nutrisi (sama seperti sebelumnya)
+        const workoutData = {
+            senin: [
+                { name: "Push-up Standar", sets: "3 Set x 15 Reps", note: "Fokus pada rentang gerak penuh.", video: "https://youtu.be/IODxDxX7oi4" },
+                { name: "Wide Push-up", sets: "3 Set x 15 Reps", note: "Lebarkan tangan untuk fokus dada samping.", video: "https://youtu.be/IODxDxX7oi4" },
+                { name: "Diamond Push-up", sets: "3 Set x 12 Reps", note: "Tangan berbentuk berlian, fokus Trisep.", video: "https://youtu.be/P_rIuE8zG8Q" },
+                { name: "Tricep Dips (Kursi)", sets: "3 Set x 15 Reps", note: "Gunakan kursi/tepi ranjang kokoh. Luruskan kaki untuk menambah beban.", video: "https://youtu.be/P_rIuE8zG8Q" }
+            ],
+            selasa: [
+                { name: "Bodyweight Squat", sets: "3 Set x 20 Reps", note: "Dada tegak, dorong pinggul ke belakang seperti duduk.", video: "https://youtu.be/C-fG19J21Xg" },
+                { name: "Walking Lunge", sets: "3 Set x 15 Reps (per kaki)", note: "Langkah ke depan, lutut 90 derajat, jangan sampai menyentuh lantai.", video: "https://youtu.be/QOowkXq-hP8" },
+                { name: "Calf Raises (Tangga)", sets: "3 Set x 20 Reps", note: "Berdiri di tepi tangga, turunkan tumit sejauh mungkin.", video: "https://youtu.be/kU-0j0X43Bw" },
+                { name: "Plank", sets: "3 Set x 60 Detik", note: "Kencangkan perut dan pantat. Tubuh lurus seperti papan.", video: "https://youtu.be/ASdvN_X5M6c" },
+                { name: "Leg Raises", sets: "3 Set x 15 Reps", note: "Berbaring, angkat kaki lurus tanpa melengkungkan punggung bawah.", video: "https://youtu.be/JB2opgS8mSg" }
+            ],
+            kamis: [
+                { name: "Towel Row (Meja/Pintu)", sets: "3 Set x 15 Reps", note: "Gunakan handuk/sprei di belakang pintu tertutup atau di bawah meja yang sangat kokoh. Latihan menarik.", video: "https://youtu.be/2V4P_ePq450" },
+                { name: "Superman", sets: "3 Set x 15 Reps", note: "Tengkurap, angkat lengan dan kaki secara bersamaan, tahan 1 detik.", video: "https://youtu.be/FEgBw3W7d_k" },
+                { name: "Reverse Plank", sets: "3 Set x 45 Detik", note: "Angkat pinggul, jaga tubuh lurus dari bahu ke tumit.", video: "https://youtu.be/Y5uYcQdE4aI" },
+                { name: "Bicep Curls (Tas/Beban)", sets: "3 Set x 15 Reps", note: "Gunakan tas ransel berisi buku atau botol air sebagai beban.", video: "https://youtu.be/i7-s8W73r-A" }
+            ],
+            jumat: [
+                { name: "Burpees", sets: "3 Set x 10 Reps", note: "Lakukan secepat dan se-eksplosif mungkin. Kardio & kekuatan.", video: "https://youtu.be/dZgQXn4V3f0" },
+                { name: "Mountain Climbers", sets: "3 Set x 60 Detik", note: "Lutut ke dada, lakukan bergantian dan cepat. Jaga core kencang.", video: "https://youtu.be/nmwgirgX2QU" },
+                { name: "Push-up Standar", sets: "3 Set x Failure", note: "Lakukan sampai Anda tidak sanggup lagi.", video: "https://youtu.be/IODxDxX7oi4" },
+                { name: "Russian Twist (Beban)", sets: "3 Set x 20 Reps (per sisi)", note: "Duduk dengan kaki terangkat, putar tubuh, gunakan beban tambahan (buku/botol).", video: "https://youtu.be/wkD8rjkEIl4" }
+            ]
+        };
+
+        const nutritionData = [
+            { id: "nutrisi-sarapan", label: "Sarapan (07:00) | Protein + Karbo Kompleks (Ex: Telur & Oatmeal)" },
+            { id: "nutrisi-snack-siang", label: "Snack Siang (10:00) | Protein Cepat Serap (Ex: Greek Yogurt / Protein Shake)" },
+            { id: "nutrisi-makan-siang", label: "Makan Siang (13:00) | Protein + Karbo Kompleks + Sayuran (Ex: Ayam & Nasi Merah)" },
+            { id: "nutrisi-pasca-latihan", label: "Snack Pasca Latihan (30m setelah) | Protein Shake & Pisang (Wajib!)" },
+            { id: "nutrisi-makan-malam", label: "Makan Malam (19:00) | Protein + Lemak Sehat + Sayuran (Ex: Ikan Salmon & Salad)" },
+            { id: "nutrisi-air", label: "Air Harian | Target Minum 3-4 Liter" }
+        ];
+
+        let countdownInterval;
+
+        // --- FUNGSI UTAMA DISPLAY ---
+        function showDay(dayId) {
+            document.querySelectorAll('.workout-day').forEach(div => {
+                div.style.display = 'none';
+            });
+            document.querySelectorAll('.tab-button').forEach(btn => {
+                btn.classList.remove('active-tab', 'bg-indigo-700', 'text-white');
+                btn.classList.add('bg-gray-200', 'text-gray-700');
+            });
+
+            const selectedDiv = document.getElementById(dayId);
+            if (selectedDiv) {
+                selectedDiv.style.display = 'block';
+            }
+
+            const selectedTab = document.getElementById(`tab-${dayId}`);
+            if (selectedTab) {
+                selectedTab.classList.add('active-tab', 'bg-indigo-700', 'text-white');
+                selectedTab.classList.remove('bg-gray-200', 'text-gray-700');
+            }
+
+            // Panggil fungsi render untuk tab yang dipilih
+            if (dayId === 'progress') {
+                renderProgressHistory();
+            }
+        }
+        
+        // --- FUNGSI TIMER ---
+        function startTimer(duration) {
+            let timer = duration;
+            const display = document.querySelector('#countdown');
+            
+            document.getElementById('timer-modal').classList.remove('hidden');
+
+            if (countdownInterval) {
+                clearInterval(countdownInterval);
+            }
+
+            countdownInterval = setInterval(function () {
+                const seconds = parseInt(timer % 60, 10);
+                
+                display.textContent = seconds < 10 ? "0" + seconds : seconds;
+
+                if (--timer < 0) {
+                    clearInterval(countdownInterval);
+                    display.textContent = "00";
+                    document.getElementById('timer-modal').classList.add('hidden');
+                    showAlert();
+                }
+            }, 1000);
+        }
+
+        function hideModal() {
+            document.getElementById('timer-modal').classList.add('hidden');
+            if (countdownInterval) {
+                 clearInterval(countdownInterval);
+            }
+        }
+
+        function showAlert() {
+            document.getElementById('alert-modal').classList.remove('hidden');
+        }
+
+        function hideAlert() {
+            document.getElementById('alert-modal').classList.add('hidden');
+        }
+
+        // --- RENDER WORKOUTS ---
+        function renderWorkouts(day) {
+            const container = document.getElementById(`exercises-${day}`);
+            if (!container) return;
+
+            container.innerHTML = workoutData[day].map((ex, index) => `
+                <div class="exercise-card bg-white p-4 mb-4 border border-gray-200">
+                    <h4 class="text-lg font-semibold text-gray-800">${index + 1}. ${ex.name}</h4>
+                    <p class="text-indigo-600 font-medium mb-2">${ex.sets}</p>
+                    <p class="text-sm text-gray-500 mb-3">${ex.note}</p>
+                    <div class="flex flex-wrap gap-2">
+                        <button onclick="startTimer(60)" class="bg-red-500 hover:bg-red-600 text-white text-sm font-bold py-1 px-3 rounded-md transition duration-150">
+                            Mulai Istirahat (60s)
+                        </button>
+                        <a href="${ex.video}" target="_blank" class="bg-gray-700 hover:bg-gray-800 text-white text-sm font-bold py-1 px-3 rounded-md flex items-center transition duration-150">
+                            ▶️ Tonton Tutorial
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // --- LOGIKA NUTRISI (LOCAL STORAGE) ---
+        function renderNutritionLog() {
+            const container = document.getElementById('nutrition-log-container');
+            if (!container) return;
+
+            container.innerHTML = nutritionData.map(item => `
+                <div class="flex items-center p-3 bg-green-50 rounded-lg border border-green-200">
+                    <input type="checkbox" id="${item.id}" class="h-5 w-5 text-green-600 rounded" onchange="saveNutritionState()">
+                    <label for="${item.id}" class="ml-3 text-sm font-medium text-gray-700">${item.label}</label>
+                </div>
+            `).join('');
+            
+            loadNutritionState();
+        }
+
+        function saveNutritionState() {
+            const state = {};
+            nutritionData.forEach(item => {
+                state[item.id] = document.getElementById(item.id).checked;
+            });
+            localStorage.setItem('nutritionState', JSON.stringify(state));
+            localStorage.setItem('nutritionDate', new Date().toDateString());
+        }
+
+        function loadNutritionState() {
+            const savedDate = localStorage.getItem('nutritionDate');
+            const currentDate = new Date().toDateString();
+
+            if (savedDate !== currentDate) {
+                localStorage.removeItem('nutritionState');
+                localStorage.setItem('nutritionDate', currentDate);
+            } else {
+                const state = JSON.parse(localStorage.getItem('nutritionState'));
+                if (state) {
+                    nutritionData.forEach(item => {
+                        const checkbox = document.getElementById(item.id);
+                        if (checkbox) {
+                            checkbox.checked = state[item.id] || false;
+                        }
+                    });
+                }
+            }
+
+            document.querySelectorAll('#nutrition-log-container input[type="checkbox"]').forEach(checkbox => {
+                checkbox.addEventListener('change', saveNutritionState);
+            });
+        }
+
+        // --- LOGIKA PROGRESS TRACKING (LOCAL STORAGE) ---
+        
+        function getProgressHistory() {
+            // Mengambil riwayat, jika tidak ada, kembalikan array kosong
+            const history = localStorage.getItem('progressHistory');
+            return history ? JSON.parse(history) : [];
+        }
+
+        function saveProgressHistory(history) {
+            localStorage.setItem('progressHistory', JSON.stringify(history));
+        }
+
+        function logProgress() {
+            const date = document.getElementById('progress-date').value;
+            const weight = parseFloat(document.getElementById('progress-weight').value);
+            const pushup = parseInt(document.getElementById('progress-pushup').value);
+
+            if (!date) {
+                // Mengganti alert() dengan custom log/message
+                console.error("Tanggal wajib diisi!");
+                return; 
+            }
+
+            const newEntry = {
+                date: date,
+                weight: isNaN(weight) ? null : weight,
+                pushup: isNaN(pushup) ? null : pushup,
+                timestamp: new Date().getTime()
+            };
+
+            const history = getProgressHistory();
+            
+            // Cek apakah data untuk tanggal tersebut sudah ada
+            const existingIndex = history.findIndex(entry => entry.date === date);
+
+            if (existingIndex > -1) {
+                // Update entri yang sudah ada
+                history[existingIndex] = newEntry;
+            } else {
+                // Tambahkan entri baru
+                history.push(newEntry);
+                // Urutkan berdasarkan tanggal terbaru
+                history.sort((a, b) => new Date(b.date) - new Date(a.date));
+            }
+            
+            saveProgressHistory(history);
+            renderProgressHistory();
+
+            // Kosongkan form setelah disimpan
+            document.getElementById('progress-weight').value = '';
+            document.getElementById('progress-pushup').value = '';
+        }
+
+        function renderProgressHistory() {
+            const history = getProgressHistory();
+            const container = document.getElementById('progress-history');
+            const message = document.getElementById('no-history-message');
+
+            container.innerHTML = ''; // Kosongkan tampilan lama
+            
+            if (history.length === 0) {
+                message.style.display = 'block';
+                return;
+            }
+            message.style.display = 'none';
+
+            history.forEach(entry => {
+                const weightDisplay = entry.weight ? `<p class="text-sm text-gray-600">Berat: <strong>${entry.weight} kg</strong></p>` : '';
+                const pushupDisplay = entry.pushup ? `<p class="text-sm text-gray-600">Max Push-up: <strong>${entry.pushup} Reps</strong></p>` : '';
+
+                container.innerHTML += `
+                    <div class="p-3 bg-gray-50 border-l-4 border-purple-400 rounded-md">
+                        <p class="font-semibold text-purple-700">${new Date(entry.date).toLocaleDateString('id-ID', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</p>
+                        ${weightDisplay}
+                        ${pushupDisplay}
+                    </div>
+                `;
+            });
+        }
+
+
+        // --- INISIALISASI APLIKASI ---
+        window.onload = function() {
+            const date = new Date();
+            const dayIndex = date.getDay(); 
+            let todayId = 'nutrisi'; 
+
+            // Tentukan hari latihan hari ini
+            if (dayIndex === 1) todayId = 'senin';
+            else if (dayIndex === 2) todayId = 'selasa';
+            else if (dayIndex === 4) todayId = 'kamis';
+            else if (dayIndex === 5) todayId = 'jumat';
+            
+            const dayMap = {
+                'senin': 'Senin (Dada & Trisep)', 
+                'selasa': 'Selasa (Kaki & Inti)', 
+                'kamis': 'Kamis (Punggung & Bisep)', 
+                'jumat': 'Jumat (Full Body)',
+                'nutrisi': 'Fokus Hari Ini: Nutrisi & Istirahat!'
+            };
+            document.getElementById('today-status').textContent = `Hari ini adalah: ${dayMap[todayId] || 'Istirahat Penuh'}`;
+            
+            // Set tanggal default di form progress ke hari ini
+            document.getElementById('progress-date').valueAsDate = date;
+
+            // Render semua data
+            renderWorkouts('senin');
+            renderWorkouts('selasa');
+            renderWorkouts('kamis');
+            renderWorkouts('jumat');
+            renderNutritionLog();
+            renderProgressHistory(); // Muat riwayat saat inisialisasi
+
+            // Tampilkan tab yang sesuai dengan hari ini atau default
+            showDay(todayId); 
+        };
+    </script>
+</body>
+</html>
